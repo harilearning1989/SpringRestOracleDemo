@@ -1,0 +1,2834 @@
+{
+	"Message": "",
+	"Global": {
+		"NewConfirmed": 6673615,
+		"TotalConfirmed": 35150705,
+		"NewDeaths": 4875,
+		"TotalDeaths": 920177,
+		"NewRecovered": 223222,
+		"TotalRecovered": 19436471
+	},
+	"Countries": [
+		{
+			"Country": "Afghanistan",
+			"CountryCode": "AF",
+			"Slug": "afghanistan",
+			"NewConfirmed": 35,
+			"TotalConfirmed": 38641,
+			"NewDeaths": 0,
+			"TotalDeaths": 1420,
+			"NewRecovered": 80,
+			"TotalRecovered": 31234,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Albania",
+			"CountryCode": "AL",
+			"Slug": "albania",
+			"NewConfirmed": 164,
+			"TotalConfirmed": 11185,
+			"NewDeaths": 3,
+			"TotalDeaths": 330,
+			"NewRecovered": 51,
+			"TotalRecovered": 6494,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Algeria",
+			"CountryCode": "DZ",
+			"Slug": "algeria",
+			"NewConfirmed": 255,
+			"TotalConfirmed": 48007,
+			"NewDeaths": 6,
+			"TotalDeaths": 1605,
+			"NewRecovered": 152,
+			"TotalRecovered": 33875,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Andorra",
+			"CountryCode": "AD",
+			"Slug": "andorra",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 1344,
+			"NewDeaths": 0,
+			"TotalDeaths": 53,
+			"NewRecovered": 0,
+			"TotalRecovered": 943,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Angola",
+			"CountryCode": "AO",
+			"Slug": "angola",
+			"NewConfirmed": 56,
+			"TotalConfirmed": 3335,
+			"NewDeaths": 1,
+			"TotalDeaths": 132,
+			"NewRecovered": 1,
+			"TotalRecovered": 1289,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Antigua and Barbuda",
+			"CountryCode": "AG",
+			"Slug": "antigua-and-barbuda",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 95,
+			"NewDeaths": 0,
+			"TotalDeaths": 3,
+			"NewRecovered": 0,
+			"TotalRecovered": 91,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Argentina",
+			"CountryCode": "AR",
+			"Slug": "argentina",
+			"NewConfirmed": 10776,
+			"TotalConfirmed": 546481,
+			"NewDeaths": 115,
+			"TotalDeaths": 11263,
+			"NewRecovered": 9650,
+			"TotalRecovered": 409771,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Armenia",
+			"CountryCode": "AM",
+			"Slug": "armenia",
+			"NewConfirmed": 172,
+			"TotalConfirmed": 45675,
+			"NewDeaths": 2,
+			"TotalDeaths": 911,
+			"NewRecovered": 171,
+			"TotalRecovered": 41605,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Australia",
+			"CountryCode": "AU",
+			"Slug": "australia",
+			"NewConfirmed": 44,
+			"TotalConfirmed": 26651,
+			"NewDeaths": 7,
+			"TotalDeaths": 810,
+			"NewRecovered": 11,
+			"TotalRecovered": 23338,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Austria",
+			"CountryCode": "AT",
+			"Slug": "austria",
+			"NewConfirmed": 869,
+			"TotalConfirmed": 32696,
+			"NewDeaths": 4,
+			"TotalDeaths": 754,
+			"NewRecovered": 322,
+			"TotalRecovered": 26579,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Azerbaijan",
+			"CountryCode": "AZ",
+			"Slug": "azerbaijan",
+			"NewConfirmed": 135,
+			"TotalConfirmed": 38172,
+			"NewDeaths": 2,
+			"TotalDeaths": 559,
+			"NewRecovered": 167,
+			"TotalRecovered": 35607,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bahamas",
+			"CountryCode": "BS",
+			"Slug": "bahamas",
+			"NewConfirmed": 114,
+			"TotalConfirmed": 2928,
+			"NewDeaths": 2,
+			"TotalDeaths": 67,
+			"NewRecovered": 99,
+			"TotalRecovered": 1319,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bahrain",
+			"CountryCode": "BH",
+			"Slug": "bahrain",
+			"NewConfirmed": 747,
+			"TotalConfirmed": 59586,
+			"NewDeaths": 3,
+			"TotalDeaths": 211,
+			"NewRecovered": 416,
+			"TotalRecovered": 53192,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bangladesh",
+			"CountryCode": "BD",
+			"Slug": "bangladesh",
+			"NewConfirmed": 1282,
+			"TotalConfirmed": 336044,
+			"NewDeaths": 34,
+			"TotalDeaths": 4702,
+			"NewRecovered": 2247,
+			"TotalRecovered": 238271,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Barbados",
+			"CountryCode": "BB",
+			"Slug": "barbados",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 180,
+			"NewDeaths": 0,
+			"TotalDeaths": 7,
+			"NewRecovered": 0,
+			"TotalRecovered": 158,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Belarus",
+			"CountryCode": "BY",
+			"Slug": "belarus",
+			"NewConfirmed": 191,
+			"TotalConfirmed": 73975,
+			"NewDeaths": 6,
+			"TotalDeaths": 744,
+			"NewRecovered": 178,
+			"TotalRecovered": 72547,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Belgium",
+			"CountryCode": "BE",
+			"Slug": "belgium",
+			"NewConfirmed": 941,
+			"TotalConfirmed": 92478,
+			"NewDeaths": 4,
+			"TotalDeaths": 9923,
+			"NewRecovered": 20,
+			"TotalRecovered": 18709,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Belize",
+			"CountryCode": "BZ",
+			"Slug": "belize",
+			"NewConfirmed": 23,
+			"TotalConfirmed": 1458,
+			"NewDeaths": 0,
+			"TotalDeaths": 19,
+			"NewRecovered": 54,
+			"TotalRecovered": 458,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Benin",
+			"CountryCode": "BJ",
+			"Slug": "benin",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 2242,
+			"NewDeaths": 0,
+			"TotalDeaths": 40,
+			"NewRecovered": 0,
+			"TotalRecovered": 1793,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bhutan",
+			"CountryCode": "BT",
+			"Slug": "bhutan",
+			"NewConfirmed": 3,
+			"TotalConfirmed": 244,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 1,
+			"TotalRecovered": 159,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bolivia",
+			"CountryCode": "BO",
+			"Slug": "bolivia",
+			"NewConfirmed": 810,
+			"TotalConfirmed": 125982,
+			"NewDeaths": 47,
+			"TotalDeaths": 7297,
+			"NewRecovered": 1556,
+			"TotalRecovered": 82796,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bosnia and Herzegovina",
+			"CountryCode": "BA",
+			"Slug": "bosnia-and-herzegovina",
+			"NewConfirmed": 304,
+			"TotalConfirmed": 23138,
+			"NewDeaths": 4,
+			"TotalDeaths": 690,
+			"NewRecovered": 250,
+			"TotalRecovered": 15922,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Botswana",
+			"CountryCode": "BW",
+			"Slug": "botswana",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 2252,
+			"NewDeaths": 0,
+			"TotalDeaths": 10,
+			"NewRecovered": 0,
+			"TotalRecovered": 546,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Brazil",
+			"CountryCode": "BR",
+			"Slug": "brazil",
+			"NewConfirmed": 33523,
+			"TotalConfirmed": 4315687,
+			"NewDeaths": 814,
+			"TotalDeaths": 131210,
+			"NewRecovered": 28048,
+			"TotalRecovered": 3723206,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Brunei Darussalam",
+			"CountryCode": "BN",
+			"Slug": "brunei",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 145,
+			"NewDeaths": 0,
+			"TotalDeaths": 3,
+			"NewRecovered": 0,
+			"TotalRecovered": 139,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Bulgaria",
+			"CountryCode": "BG",
+			"Slug": "bulgaria",
+			"NewConfirmed": 92,
+			"TotalConfirmed": 17891,
+			"NewDeaths": 4,
+			"TotalDeaths": 717,
+			"NewRecovered": 8,
+			"TotalRecovered": 12758,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Burkina Faso",
+			"CountryCode": "BF",
+			"Slug": "burkina-faso",
+			"NewConfirmed": 15,
+			"TotalConfirmed": 1514,
+			"NewDeaths": 0,
+			"TotalDeaths": 56,
+			"NewRecovered": 0,
+			"TotalRecovered": 1127,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Burundi",
+			"CountryCode": "BI",
+			"Slug": "burundi",
+			"NewConfirmed": 2,
+			"TotalConfirmed": 471,
+			"NewDeaths": 0,
+			"TotalDeaths": 1,
+			"NewRecovered": 0,
+			"TotalRecovered": 374,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Cambodia",
+			"CountryCode": "KH",
+			"Slug": "cambodia",
+			"NewConfirmed": 1,
+			"TotalConfirmed": 275,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 274,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Cameroon",
+			"CountryCode": "CM",
+			"Slug": "cameroon",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 20009,
+			"NewDeaths": 0,
+			"TotalDeaths": 415,
+			"NewRecovered": 0,
+			"TotalRecovered": 18837,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Canada",
+			"CountryCode": "CA",
+			"Slug": "canada",
+			"NewConfirmed": 488,
+			"TotalConfirmed": 138151,
+			"NewDeaths": 6,
+			"TotalDeaths": 9219,
+			"NewRecovered": 407,
+			"TotalRecovered": 121944,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Cape Verde",
+			"CountryCode": "CV",
+			"Slug": "cape-verde",
+			"NewConfirmed": 60,
+			"TotalConfirmed": 4711,
+			"NewDeaths": 0,
+			"TotalDeaths": 44,
+			"NewRecovered": 28,
+			"TotalRecovered": 4104,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Central African Republic",
+			"CountryCode": "CF",
+			"Slug": "central-african-republic",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 4749,
+			"NewDeaths": 0,
+			"TotalDeaths": 62,
+			"NewRecovered": 0,
+			"TotalRecovered": 1825,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Chad",
+			"CountryCode": "TD",
+			"Slug": "chad",
+			"NewConfirmed": 2,
+			"TotalConfirmed": 1083,
+			"NewDeaths": 1,
+			"TotalDeaths": 80,
+			"NewRecovered": 4,
+			"TotalRecovered": 938,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Chile",
+			"CountryCode": "CL",
+			"Slug": "chile",
+			"NewConfirmed": 2131,
+			"TotalConfirmed": 432666,
+			"NewDeaths": 45,
+			"TotalDeaths": 11895,
+			"NewRecovered": 1855,
+			"TotalRecovered": 404919,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "China",
+			"CountryCode": "CN",
+			"Slug": "china",
+			"NewConfirmed": 23,
+			"TotalConfirmed": 90168,
+			"NewDeaths": 1,
+			"TotalDeaths": 4734,
+			"NewRecovered": 29,
+			"TotalRecovered": 85054,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Colombia",
+			"CountryCode": "CO",
+			"Slug": "colombia",
+			"NewConfirmed": 6876,
+			"TotalConfirmed": 708964,
+			"NewDeaths": 216,
+			"TotalDeaths": 22734,
+			"NewRecovered": 10126,
+			"TotalRecovered": 592820,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Comoros",
+			"CountryCode": "KM",
+			"Slug": "comoros",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 456,
+			"NewDeaths": 0,
+			"TotalDeaths": 7,
+			"NewRecovered": 0,
+			"TotalRecovered": 415,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Congo (Brazzaville)",
+			"CountryCode": "CG",
+			"Slug": "congo-brazzaville",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 4928,
+			"NewDeaths": 0,
+			"TotalDeaths": 88,
+			"NewRecovered": 0,
+			"TotalRecovered": 3887,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Congo (Kinshasa)",
+			"CountryCode": "CD",
+			"Slug": "congo-kinshasa",
+			"NewConfirmed": 24,
+			"TotalConfirmed": 10385,
+			"NewDeaths": 0,
+			"TotalDeaths": 262,
+			"NewRecovered": 97,
+			"TotalRecovered": 9719,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Costa Rica",
+			"CountryCode": "CR",
+			"Slug": "costa-rica",
+			"NewConfirmed": 1485,
+			"TotalConfirmed": 55454,
+			"NewDeaths": 7,
+			"TotalDeaths": 590,
+			"NewRecovered": 218,
+			"TotalRecovered": 20928,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Croatia",
+			"CountryCode": "HR",
+			"Slug": "croatia",
+			"NewConfirmed": 261,
+			"TotalConfirmed": 13368,
+			"NewDeaths": 7,
+			"TotalDeaths": 218,
+			"NewRecovered": 255,
+			"TotalRecovered": 10721,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Cuba",
+			"CountryCode": "CU",
+			"Slug": "cuba",
+			"NewConfirmed": 60,
+			"TotalConfirmed": 4653,
+			"NewDeaths": 2,
+			"TotalDeaths": 108,
+			"NewRecovered": 34,
+			"TotalRecovered": 3878,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Cyprus",
+			"CountryCode": "CY",
+			"Slug": "cyprus",
+			"NewConfirmed": 3,
+			"TotalConfirmed": 1523,
+			"NewDeaths": 0,
+			"TotalDeaths": 22,
+			"NewRecovered": 44,
+			"TotalRecovered": 1281,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Czech Republic",
+			"CountryCode": "CZ",
+			"Slug": "czech-republic",
+			"NewConfirmed": 1541,
+			"TotalConfirmed": 35401,
+			"NewDeaths": 3,
+			"TotalDeaths": 453,
+			"NewRecovered": 65,
+			"TotalRecovered": 21205,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Côte d'Ivoire",
+			"CountryCode": "CI",
+			"Slug": "cote-divoire",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 18916,
+			"NewDeaths": 0,
+			"TotalDeaths": 119,
+			"NewRecovered": 0,
+			"TotalRecovered": 17960,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Denmark",
+			"CountryCode": "DK",
+			"Slug": "denmark",
+			"NewConfirmed": 343,
+			"TotalConfirmed": 19989,
+			"NewDeaths": 1,
+			"TotalDeaths": 630,
+			"NewRecovered": 108,
+			"TotalRecovered": 16671,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Djibouti",
+			"CountryCode": "DJ",
+			"Slug": "djibouti",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 5394,
+			"NewDeaths": 0,
+			"TotalDeaths": 61,
+			"NewRecovered": 0,
+			"TotalRecovered": 5327,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Dominica",
+			"CountryCode": "DM",
+			"Slug": "dominica",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 24,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 18,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Dominican Republic",
+			"CountryCode": "DO",
+			"Slug": "dominican-republic",
+			"NewConfirmed": 860,
+			"TotalConfirmed": 103092,
+			"NewDeaths": 12,
+			"TotalDeaths": 1953,
+			"NewRecovered": 784,
+			"TotalRecovered": 76531,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Ecuador",
+			"CountryCode": "EC",
+			"Slug": "ecuador",
+			"NewConfirmed": 1719,
+			"TotalConfirmed": 116451,
+			"NewDeaths": 28,
+			"TotalDeaths": 10864,
+			"NewRecovered": 0,
+			"TotalRecovered": 91242,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Egypt",
+			"CountryCode": "EG",
+			"Slug": "egypt",
+			"NewConfirmed": 148,
+			"TotalConfirmed": 100856,
+			"NewDeaths": 20,
+			"TotalDeaths": 5627,
+			"NewRecovered": 788,
+			"TotalRecovered": 83261,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "El Salvador",
+			"CountryCode": "SV",
+			"Slug": "el-salvador",
+			"NewConfirmed": 78,
+			"TotalConfirmed": 26851,
+			"NewDeaths": 5,
+			"TotalDeaths": 782,
+			"NewRecovered": 441,
+			"TotalRecovered": 17874,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Equatorial Guinea",
+			"CountryCode": "GQ",
+			"Slug": "equatorial-guinea",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 4996,
+			"NewDeaths": 0,
+			"TotalDeaths": 83,
+			"NewRecovered": 0,
+			"TotalRecovered": 4490,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Eritrea",
+			"CountryCode": "ER",
+			"Slug": "eritrea",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 361,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 304,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Estonia",
+			"CountryCode": "EE",
+			"Slug": "estonia",
+			"NewConfirmed": 23,
+			"TotalConfirmed": 2655,
+			"NewDeaths": 0,
+			"TotalDeaths": 64,
+			"NewRecovered": 19,
+			"TotalRecovered": 2252,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Ethiopia",
+			"CountryCode": "ET",
+			"Slug": "ethiopia",
+			"NewConfirmed": 521,
+			"TotalConfirmed": 63888,
+			"NewDeaths": 10,
+			"TotalDeaths": 996,
+			"NewRecovered": 469,
+			"TotalRecovered": 24493,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Fiji",
+			"CountryCode": "FJ",
+			"Slug": "fiji",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 32,
+			"NewDeaths": 0,
+			"TotalDeaths": 2,
+			"NewRecovered": 0,
+			"TotalRecovered": 24,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Finland",
+			"CountryCode": "FI",
+			"Slug": "finland",
+			"NewConfirmed": 45,
+			"TotalConfirmed": 8557,
+			"NewDeaths": 0,
+			"TotalDeaths": 337,
+			"NewRecovered": 0,
+			"TotalRecovered": 7500,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "France",
+			"CountryCode": "FR",
+			"Slug": "france",
+			"NewConfirmed": 921,
+			"TotalConfirmed": 402811,
+			"NewDeaths": 1,
+			"TotalDeaths": 30902,
+			"NewRecovered": 555,
+			"TotalRecovered": 90445,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Gabon",
+			"CountryCode": "GA",
+			"Slug": "gabon",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 8643,
+			"NewDeaths": 0,
+			"TotalDeaths": 53,
+			"NewRecovered": 0,
+			"TotalRecovered": 7706,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Gambia",
+			"CountryCode": "GM",
+			"Slug": "gambia",
+			"NewConfirmed": 14,
+			"TotalConfirmed": 3376,
+			"NewDeaths": 2,
+			"TotalDeaths": 102,
+			"NewRecovered": 35,
+			"TotalRecovered": 1617,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Georgia",
+			"CountryCode": "GE",
+			"Slug": "georgia",
+			"NewConfirmed": 158,
+			"TotalConfirmed": 2075,
+			"NewDeaths": 0,
+			"TotalDeaths": 19,
+			"NewRecovered": 9,
+			"TotalRecovered": 1363,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Germany",
+			"CountryCode": "DE",
+			"Slug": "germany",
+			"NewConfirmed": 1082,
+			"TotalConfirmed": 260817,
+			"NewDeaths": 4,
+			"TotalDeaths": 9352,
+			"NewRecovered": 604,
+			"TotalRecovered": 231953,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Ghana",
+			"CountryCode": "GH",
+			"Slug": "ghana",
+			"NewConfirmed": 46,
+			"TotalConfirmed": 45434,
+			"NewDeaths": 1,
+			"TotalDeaths": 286,
+			"NewRecovered": 75,
+			"TotalRecovered": 44342,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Greece",
+			"CountryCode": "GR",
+			"Slug": "greece",
+			"NewConfirmed": 302,
+			"TotalConfirmed": 13036,
+			"NewDeaths": 2,
+			"TotalDeaths": 302,
+			"NewRecovered": 0,
+			"TotalRecovered": 1347,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Grenada",
+			"CountryCode": "GD",
+			"Slug": "grenada",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 24,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 24,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Guatemala",
+			"CountryCode": "GT",
+			"Slug": "guatemala",
+			"NewConfirmed": 649,
+			"TotalConfirmed": 81658,
+			"NewDeaths": 20,
+			"TotalDeaths": 2949,
+			"NewRecovered": 700,
+			"TotalRecovered": 70403,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Guinea",
+			"CountryCode": "GN",
+			"Slug": "guinea",
+			"NewConfirmed": 41,
+			"TotalConfirmed": 10020,
+			"NewDeaths": 0,
+			"TotalDeaths": 63,
+			"NewRecovered": 62,
+			"TotalRecovered": 9251,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Guinea-Bissau",
+			"CountryCode": "GW",
+			"Slug": "guinea-bissau",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 2275,
+			"NewDeaths": 0,
+			"TotalDeaths": 39,
+			"NewRecovered": 0,
+			"TotalRecovered": 1127,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Guyana",
+			"CountryCode": "GY",
+			"Slug": "guyana",
+			"NewConfirmed": 49,
+			"TotalConfirmed": 1812,
+			"NewDeaths": 2,
+			"TotalDeaths": 54,
+			"NewRecovered": 47,
+			"TotalRecovered": 1191,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Haiti",
+			"CountryCode": "HT",
+			"Slug": "haiti",
+			"NewConfirmed": 21,
+			"TotalConfirmed": 8478,
+			"NewDeaths": 3,
+			"TotalDeaths": 219,
+			"NewRecovered": 0,
+			"TotalRecovered": 6120,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Holy See (Vatican City State)",
+			"CountryCode": "VA",
+			"Slug": "holy-see-vatican-city-state",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 12,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 12,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Honduras",
+			"CountryCode": "HN",
+			"Slug": "honduras",
+			"NewConfirmed": 1087,
+			"TotalConfirmed": 67136,
+			"NewDeaths": 7,
+			"TotalDeaths": 2065,
+			"NewRecovered": 1147,
+			"TotalRecovered": 17760,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Hungary",
+			"CountryCode": "HU",
+			"Slug": "hungary",
+			"NewConfirmed": 916,
+			"TotalConfirmed": 11825,
+			"NewDeaths": 2,
+			"TotalDeaths": 633,
+			"NewRecovered": 44,
+			"TotalRecovered": 4058,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Iceland",
+			"CountryCode": "IS",
+			"Slug": "iceland",
+			"NewConfirmed": 1,
+			"TotalConfirmed": 2162,
+			"NewDeaths": 0,
+			"TotalDeaths": 10,
+			"NewRecovered": 6,
+			"TotalRecovered": 2085,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "India",
+			"CountryCode": "IN",
+			"Slug": "india",
+			"NewConfirmed": 94372,
+			"TotalConfirmed": 4754356,
+			"NewDeaths": 1114,
+			"TotalDeaths": 78586,
+			"NewRecovered": 78399,
+			"TotalRecovered": 3702595,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Indonesia",
+			"CountryCode": "ID",
+			"Slug": "indonesia",
+			"NewConfirmed": 3806,
+			"TotalConfirmed": 214746,
+			"NewDeaths": 106,
+			"TotalDeaths": 8650,
+			"NewRecovered": 2241,
+			"TotalRecovered": 152458,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Iran, Islamic Republic of",
+			"CountryCode": "IR",
+			"Slug": "iran",
+			"NewConfirmed": 2139,
+			"TotalConfirmed": 399940,
+			"NewDeaths": 116,
+			"TotalDeaths": 23029,
+			"NewRecovered": 1977,
+			"TotalRecovered": 344516,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Iraq",
+			"CountryCode": "IQ",
+			"Slug": "iraq",
+			"NewConfirmed": 4106,
+			"TotalConfirmed": 286778,
+			"NewDeaths": 60,
+			"TotalDeaths": 7941,
+			"NewRecovered": 3887,
+			"TotalRecovered": 221283,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Ireland",
+			"CountryCode": "IE",
+			"Slug": "ireland",
+			"NewConfirmed": 159,
+			"TotalConfirmed": 30730,
+			"NewDeaths": 2,
+			"TotalDeaths": 1783,
+			"NewRecovered": 0,
+			"TotalRecovered": 23364,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Israel",
+			"CountryCode": "IL",
+			"Slug": "israel",
+			"NewConfirmed": 4158,
+			"TotalConfirmed": 152722,
+			"NewDeaths": 13,
+			"TotalDeaths": 1103,
+			"NewRecovered": 1768,
+			"TotalRecovered": 113496,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Italy",
+			"CountryCode": "IT",
+			"Slug": "italy",
+			"NewConfirmed": 1501,
+			"TotalConfirmed": 286297,
+			"NewDeaths": 6,
+			"TotalDeaths": 35603,
+			"NewRecovered": 759,
+			"TotalRecovered": 213191,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Jamaica",
+			"CountryCode": "JM",
+			"Slug": "jamaica",
+			"NewConfirmed": 112,
+			"TotalConfirmed": 3623,
+			"NewDeaths": 0,
+			"TotalDeaths": 40,
+			"NewRecovered": 53,
+			"TotalRecovered": 1072,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Japan",
+			"CountryCode": "JP",
+			"Slug": "japan",
+			"NewConfirmed": 648,
+			"TotalConfirmed": 75206,
+			"NewDeaths": 13,
+			"TotalDeaths": 1441,
+			"NewRecovered": 690,
+			"TotalRecovered": 65934,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Jordan",
+			"CountryCode": "JO",
+			"Slug": "jordan",
+			"NewConfirmed": 117,
+			"TotalConfirmed": 3062,
+			"NewDeaths": 1,
+			"TotalDeaths": 22,
+			"NewRecovered": 72,
+			"TotalRecovered": 2156,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Kazakhstan",
+			"CountryCode": "KZ",
+			"Slug": "kazakhstan",
+			"NewConfirmed": 74,
+			"TotalConfirmed": 106803,
+			"NewDeaths": 0,
+			"TotalDeaths": 1634,
+			"NewRecovered": 206,
+			"TotalRecovered": 100615,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Kenya",
+			"CountryCode": "KE",
+			"Slug": "kenya",
+			"NewConfirmed": 176,
+			"TotalConfirmed": 35969,
+			"NewDeaths": 3,
+			"TotalDeaths": 619,
+			"NewRecovered": 329,
+			"TotalRecovered": 22771,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Korea (South)",
+			"CountryCode": "KR",
+			"Slug": "korea-south",
+			"NewConfirmed": 121,
+			"TotalConfirmed": 22176,
+			"NewDeaths": 3,
+			"TotalDeaths": 358,
+			"NewRecovered": 197,
+			"TotalRecovered": 18226,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Kuwait",
+			"CountryCode": "KW",
+			"Slug": "kuwait",
+			"NewConfirmed": 736,
+			"TotalConfirmed": 94211,
+			"NewDeaths": 1,
+			"TotalDeaths": 558,
+			"NewRecovered": 744,
+			"TotalRecovered": 84404,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Kyrgyzstan",
+			"CountryCode": "KG",
+			"Slug": "kyrgyzstan",
+			"NewConfirmed": 67,
+			"TotalConfirmed": 44828,
+			"NewDeaths": 0,
+			"TotalDeaths": 1063,
+			"NewRecovered": 148,
+			"TotalRecovered": 40779,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Lao PDR",
+			"CountryCode": "LA",
+			"Slug": "lao-pdr",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 23,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 21,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Latvia",
+			"CountryCode": "LV",
+			"Slug": "latvia",
+			"NewConfirmed": 5,
+			"TotalConfirmed": 1464,
+			"NewDeaths": 0,
+			"TotalDeaths": 35,
+			"NewRecovered": 0,
+			"TotalRecovered": 1248,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Lebanon",
+			"CountryCode": "LB",
+			"Slug": "lebanon",
+			"NewConfirmed": 686,
+			"TotalConfirmed": 23669,
+			"NewDeaths": 10,
+			"TotalDeaths": 239,
+			"NewRecovered": 624,
+			"TotalRecovered": 7936,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Lesotho",
+			"CountryCode": "LS",
+			"Slug": "lesotho",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 1245,
+			"NewDeaths": 0,
+			"TotalDeaths": 33,
+			"NewRecovered": 0,
+			"TotalRecovered": 528,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Liberia",
+			"CountryCode": "LR",
+			"Slug": "liberia",
+			"NewConfirmed": 1,
+			"TotalConfirmed": 1316,
+			"NewDeaths": 0,
+			"TotalDeaths": 82,
+			"NewRecovered": 11,
+			"TotalRecovered": 1210,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Libya",
+			"CountryCode": "LY",
+			"Slug": "libya",
+			"NewConfirmed": 440,
+			"TotalConfirmed": 22348,
+			"NewDeaths": 2,
+			"TotalDeaths": 354,
+			"NewRecovered": 9594,
+			"TotalRecovered": 12100,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Liechtenstein",
+			"CountryCode": "LI",
+			"Slug": "liechtenstein",
+			"NewConfirmed": 2,
+			"TotalConfirmed": 111,
+			"NewDeaths": 0,
+			"TotalDeaths": 1,
+			"NewRecovered": 0,
+			"TotalRecovered": 105,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Lithuania",
+			"CountryCode": "LT",
+			"Slug": "lithuania",
+			"NewConfirmed": 53,
+			"TotalConfirmed": 3296,
+			"NewDeaths": 0,
+			"TotalDeaths": 86,
+			"NewRecovered": 21,
+			"TotalRecovered": 2070,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Luxembourg",
+			"CountryCode": "LU",
+			"Slug": "luxembourg",
+			"NewConfirmed": 71,
+			"TotalConfirmed": 7159,
+			"NewDeaths": 0,
+			"TotalDeaths": 124,
+			"NewRecovered": 54,
+			"TotalRecovered": 6421,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Macao, SAR China",
+			"CountryCode": "MO",
+			"Slug": "macao-sar-china",
+			"NewConfirmed": 6396100,
+			"TotalConfirmed": 6396100,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 0,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Macedonia, Republic of",
+			"CountryCode": "MK",
+			"Slug": "macedonia",
+			"NewConfirmed": 139,
+			"TotalConfirmed": 15694,
+			"NewDeaths": 4,
+			"TotalDeaths": 646,
+			"NewRecovered": 134,
+			"TotalRecovered": 13128,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Madagascar",
+			"CountryCode": "MG",
+			"Slug": "madagascar",
+			"NewConfirmed": 68,
+			"TotalConfirmed": 15737,
+			"NewDeaths": 1,
+			"TotalDeaths": 210,
+			"NewRecovered": 29,
+			"TotalRecovered": 14349,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Malawi",
+			"CountryCode": "MW",
+			"Slug": "malawi",
+			"NewConfirmed": 9,
+			"TotalConfirmed": 5678,
+			"NewDeaths": 0,
+			"TotalDeaths": 177,
+			"NewRecovered": 4,
+			"TotalRecovered": 3724,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Malaysia",
+			"CountryCode": "MY",
+			"Slug": "malaysia",
+			"NewConfirmed": 58,
+			"TotalConfirmed": 9868,
+			"NewDeaths": 0,
+			"TotalDeaths": 128,
+			"NewRecovered": 8,
+			"TotalRecovered": 9189,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Maldives",
+			"CountryCode": "MV",
+			"Slug": "maldives",
+			"NewConfirmed": 62,
+			"TotalConfirmed": 9052,
+			"NewDeaths": 0,
+			"TotalDeaths": 31,
+			"NewRecovered": 209,
+			"TotalRecovered": 7055,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mali",
+			"CountryCode": "ML",
+			"Slug": "mali",
+			"NewConfirmed": 4,
+			"TotalConfirmed": 2916,
+			"NewDeaths": 0,
+			"TotalDeaths": 128,
+			"NewRecovered": 5,
+			"TotalRecovered": 2276,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Malta",
+			"CountryCode": "MT",
+			"Slug": "malta",
+			"NewConfirmed": 27,
+			"TotalConfirmed": 2274,
+			"NewDeaths": 0,
+			"TotalDeaths": 15,
+			"NewRecovered": 17,
+			"TotalRecovered": 1850,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mauritania",
+			"CountryCode": "MR",
+			"Slug": "mauritania",
+			"NewConfirmed": 8,
+			"TotalConfirmed": 7274,
+			"NewDeaths": 0,
+			"TotalDeaths": 161,
+			"NewRecovered": 18,
+			"TotalRecovered": 6804,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mauritius",
+			"CountryCode": "MU",
+			"Slug": "mauritius",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 361,
+			"NewDeaths": 0,
+			"TotalDeaths": 10,
+			"NewRecovered": 0,
+			"TotalRecovered": 335,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mexico",
+			"CountryCode": "MX",
+			"Slug": "mexico",
+			"NewConfirmed": 5674,
+			"TotalConfirmed": 663973,
+			"NewDeaths": 421,
+			"TotalDeaths": 70604,
+			"NewRecovered": 4025,
+			"TotalRecovered": 551113,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Moldova",
+			"CountryCode": "MD",
+			"Slug": "moldova",
+			"NewConfirmed": 531,
+			"TotalConfirmed": 42714,
+			"NewDeaths": 3,
+			"TotalDeaths": 1117,
+			"NewRecovered": 0,
+			"TotalRecovered": 30437,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Monaco",
+			"CountryCode": "MC",
+			"Slug": "monaco",
+			"NewConfirmed": 1,
+			"TotalConfirmed": 169,
+			"NewDeaths": 0,
+			"TotalDeaths": 1,
+			"NewRecovered": 0,
+			"TotalRecovered": 123,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mongolia",
+			"CountryCode": "MN",
+			"Slug": "mongolia",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 311,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 298,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Montenegro",
+			"CountryCode": "ME",
+			"Slug": "montenegro",
+			"NewConfirmed": 145,
+			"TotalConfirmed": 6530,
+			"NewDeaths": 3,
+			"TotalDeaths": 118,
+			"NewRecovered": 31,
+			"TotalRecovered": 4491,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Morocco",
+			"CountryCode": "MA",
+			"Slug": "morocco",
+			"NewConfirmed": 2238,
+			"TotalConfirmed": 84435,
+			"NewDeaths": 29,
+			"TotalDeaths": 1553,
+			"NewRecovered": 1673,
+			"TotalRecovered": 65867,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Mozambique",
+			"CountryCode": "MZ",
+			"Slug": "mozambique",
+			"NewConfirmed": 122,
+			"TotalConfirmed": 5040,
+			"NewDeaths": 4,
+			"TotalDeaths": 35,
+			"NewRecovered": 6,
+			"TotalRecovered": 2905,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Myanmar",
+			"CountryCode": "MM",
+			"Slug": "myanmar",
+			"NewConfirmed": 374,
+			"TotalConfirmed": 2796,
+			"NewDeaths": 2,
+			"TotalDeaths": 16,
+			"NewRecovered": 51,
+			"TotalRecovered": 676,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Namibia",
+			"CountryCode": "NA",
+			"Slug": "namibia",
+			"NewConfirmed": 167,
+			"TotalConfirmed": 9604,
+			"NewDeaths": 0,
+			"TotalDeaths": 98,
+			"NewRecovered": 913,
+			"TotalRecovered": 5811,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Nepal",
+			"CountryCode": "NP",
+			"Slug": "nepal",
+			"NewConfirmed": 1201,
+			"TotalConfirmed": 53120,
+			"NewDeaths": 14,
+			"TotalDeaths": 336,
+			"NewRecovered": 852,
+			"TotalRecovered": 37524,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Netherlands",
+			"CountryCode": "NL",
+			"Slug": "netherlands",
+			"NewConfirmed": 1231,
+			"TotalConfirmed": 81012,
+			"NewDeaths": 1,
+			"TotalDeaths": 6253,
+			"NewRecovered": 0,
+			"TotalRecovered": 0,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "New Zealand",
+			"CountryCode": "NZ",
+			"Slug": "new-zealand",
+			"NewConfirmed": 2,
+			"TotalConfirmed": 1797,
+			"NewDeaths": 0,
+			"TotalDeaths": 24,
+			"NewRecovered": 13,
+			"TotalRecovered": 1676,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Nicaragua",
+			"CountryCode": "NI",
+			"Slug": "nicaragua",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 4818,
+			"NewDeaths": 0,
+			"TotalDeaths": 144,
+			"NewRecovered": 0,
+			"TotalRecovered": 2913,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Niger",
+			"CountryCode": "NE",
+			"Slug": "niger",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 1178,
+			"NewDeaths": 0,
+			"TotalDeaths": 69,
+			"NewRecovered": 0,
+			"TotalRecovered": 1100,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Nigeria",
+			"CountryCode": "NG",
+			"Slug": "nigeria",
+			"NewConfirmed": 160,
+			"TotalConfirmed": 56177,
+			"NewDeaths": 2,
+			"TotalDeaths": 1078,
+			"NewRecovered": 90,
+			"TotalRecovered": 44088,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Norway",
+			"CountryCode": "NO",
+			"Slug": "norway",
+			"NewConfirmed": 76,
+			"TotalConfirmed": 12079,
+			"NewDeaths": 0,
+			"TotalDeaths": 265,
+			"NewRecovered": 0,
+			"TotalRecovered": 10371,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Oman",
+			"CountryCode": "OM",
+			"Slug": "oman",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 88337,
+			"NewDeaths": 0,
+			"TotalDeaths": 762,
+			"NewRecovered": 0,
+			"TotalRecovered": 83325,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Pakistan",
+			"CountryCode": "PK",
+			"Slug": "pakistan",
+			"NewConfirmed": 526,
+			"TotalConfirmed": 301481,
+			"NewDeaths": 6,
+			"TotalDeaths": 6379,
+			"NewRecovered": 893,
+			"TotalRecovered": 289429,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Palestinian Territory",
+			"CountryCode": "PS",
+			"Slug": "palestine",
+			"NewConfirmed": 650,
+			"TotalConfirmed": 29906,
+			"NewDeaths": 6,
+			"TotalDeaths": 210,
+			"NewRecovered": 191,
+			"TotalRecovered": 19979,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Panama",
+			"CountryCode": "PA",
+			"Slug": "panama",
+			"NewConfirmed": 711,
+			"TotalConfirmed": 101041,
+			"NewDeaths": 15,
+			"TotalDeaths": 2155,
+			"NewRecovered": 618,
+			"TotalRecovered": 73476,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Papua New Guinea",
+			"CountryCode": "PG",
+			"Slug": "papua-new-guinea",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 508,
+			"NewDeaths": 0,
+			"TotalDeaths": 5,
+			"NewRecovered": 0,
+			"TotalRecovered": 232,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Paraguay",
+			"CountryCode": "PY",
+			"Slug": "paraguay",
+			"NewConfirmed": 812,
+			"TotalConfirmed": 27324,
+			"NewDeaths": 18,
+			"TotalDeaths": 514,
+			"NewRecovered": 498,
+			"TotalRecovered": 13679,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Peru",
+			"CountryCode": "PE",
+			"Slug": "peru",
+			"NewConfirmed": 6603,
+			"TotalConfirmed": 716670,
+			"NewDeaths": 126,
+			"TotalDeaths": 30470,
+			"NewRecovered": 14576,
+			"TotalRecovered": 559321,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Philippines",
+			"CountryCode": "PH",
+			"Slug": "philippines",
+			"NewConfirmed": 4899,
+			"TotalConfirmed": 257863,
+			"NewDeaths": 184,
+			"TotalDeaths": 4292,
+			"NewRecovered": 510,
+			"TotalRecovered": 187116,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Poland",
+			"CountryCode": "PL",
+			"Slug": "poland",
+			"NewConfirmed": 603,
+			"TotalConfirmed": 73650,
+			"NewDeaths": 13,
+			"TotalDeaths": 2182,
+			"NewRecovered": 877,
+			"TotalRecovered": 59725,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Portugal",
+			"CountryCode": "PT",
+			"Slug": "portugal",
+			"NewConfirmed": 497,
+			"TotalConfirmed": 63310,
+			"NewDeaths": 5,
+			"TotalDeaths": 1860,
+			"NewRecovered": 250,
+			"TotalRecovered": 43894,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Qatar",
+			"CountryCode": "QA",
+			"Slug": "qatar",
+			"NewConfirmed": 236,
+			"TotalConfirmed": 121523,
+			"NewDeaths": 0,
+			"TotalDeaths": 205,
+			"NewRecovered": 276,
+			"TotalRecovered": 118475,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Republic of Kosovo",
+			"CountryCode": "XK",
+			"Slug": "kosovo",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 12683,
+			"NewDeaths": 0,
+			"TotalDeaths": 488,
+			"NewRecovered": 0,
+			"TotalRecovered": 8788,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Romania",
+			"CountryCode": "RO",
+			"Slug": "romania",
+			"NewConfirmed": 1311,
+			"TotalConfirmed": 102386,
+			"NewDeaths": 27,
+			"TotalDeaths": 4127,
+			"NewRecovered": 1801,
+			"TotalRecovered": 42811,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Russian Federation",
+			"CountryCode": "RU",
+			"Slug": "russia",
+			"NewConfirmed": 5406,
+			"TotalConfirmed": 1053663,
+			"NewDeaths": 117,
+			"TotalDeaths": 18426,
+			"NewRecovered": 5354,
+			"TotalRecovered": 871000,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Rwanda",
+			"CountryCode": "RW",
+			"Slug": "rwanda",
+			"NewConfirmed": 31,
+			"TotalConfirmed": 4565,
+			"NewDeaths": 0,
+			"TotalDeaths": 22,
+			"NewRecovered": 94,
+			"TotalRecovered": 2544,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Réunion",
+			"CountryCode": "RE",
+			"Slug": "réunion",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 0,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 0,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Saint Kitts and Nevis",
+			"CountryCode": "KN",
+			"Slug": "saint-kitts-and-nevis",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 17,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 17,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Saint Lucia",
+			"CountryCode": "LC",
+			"Slug": "saint-lucia",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 27,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 26,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Saint Vincent and Grenadines",
+			"CountryCode": "VC",
+			"Slug": "saint-vincent-and-the-grenadines",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 64,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 61,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "San Marino",
+			"CountryCode": "SM",
+			"Slug": "san-marino",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 722,
+			"NewDeaths": 0,
+			"TotalDeaths": 42,
+			"NewRecovered": 0,
+			"TotalRecovered": 662,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Sao Tome and Principe",
+			"CountryCode": "ST",
+			"Slug": "sao-tome-and-principe",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 906,
+			"NewDeaths": 0,
+			"TotalDeaths": 15,
+			"NewRecovered": 0,
+			"TotalRecovered": 866,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Saudi Arabia",
+			"CountryCode": "SA",
+			"Slug": "saudi-arabia",
+			"NewConfirmed": 643,
+			"TotalConfirmed": 325050,
+			"NewDeaths": 27,
+			"TotalDeaths": 4240,
+			"NewRecovered": 903,
+			"TotalRecovered": 301836,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Senegal",
+			"CountryCode": "SN",
+			"Slug": "senegal",
+			"NewConfirmed": 44,
+			"TotalConfirmed": 14237,
+			"NewDeaths": 2,
+			"TotalDeaths": 295,
+			"NewRecovered": 23,
+			"TotalRecovered": 10373,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Serbia",
+			"CountryCode": "RS",
+			"Slug": "serbia",
+			"NewConfirmed": 72,
+			"TotalConfirmed": 32300,
+			"NewDeaths": 1,
+			"TotalDeaths": 731,
+			"NewRecovered": 0,
+			"TotalRecovered": 0,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Seychelles",
+			"CountryCode": "SC",
+			"Slug": "seychelles",
+			"NewConfirmed": 1,
+			"TotalConfirmed": 139,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 136,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Sierra Leone",
+			"CountryCode": "SL",
+			"Slug": "sierra-leone",
+			"NewConfirmed": 9,
+			"TotalConfirmed": 2096,
+			"NewDeaths": 0,
+			"TotalDeaths": 72,
+			"NewRecovered": 12,
+			"TotalRecovered": 1634,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Singapore",
+			"CountryCode": "SG",
+			"Slug": "singapore",
+			"NewConfirmed": 42,
+			"TotalConfirmed": 57357,
+			"NewDeaths": 0,
+			"TotalDeaths": 27,
+			"NewRecovered": 92,
+			"TotalRecovered": 56699,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Slovakia",
+			"CountryCode": "SK",
+			"Slug": "slovakia",
+			"NewConfirmed": 201,
+			"TotalConfirmed": 5453,
+			"NewDeaths": 1,
+			"TotalDeaths": 38,
+			"NewRecovered": 33,
+			"TotalRecovered": 3114,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Slovenia",
+			"CountryCode": "SI",
+			"Slug": "slovenia",
+			"NewConfirmed": 106,
+			"TotalConfirmed": 3603,
+			"NewDeaths": 0,
+			"TotalDeaths": 135,
+			"NewRecovered": 37,
+			"TotalRecovered": 2699,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Somalia",
+			"CountryCode": "SO",
+			"Slug": "somalia",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 3376,
+			"NewDeaths": 0,
+			"TotalDeaths": 98,
+			"NewRecovered": 0,
+			"TotalRecovered": 2791,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "South Africa",
+			"CountryCode": "ZA",
+			"Slug": "south-africa",
+			"NewConfirmed": 1816,
+			"TotalConfirmed": 648214,
+			"NewDeaths": 49,
+			"TotalDeaths": 15427,
+			"NewRecovered": 1836,
+			"TotalRecovered": 576423,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "South Sudan",
+			"CountryCode": "SS",
+			"Slug": "south-sudan",
+			"NewConfirmed": 10,
+			"TotalConfirmed": 2578,
+			"NewDeaths": 0,
+			"TotalDeaths": 49,
+			"NewRecovered": 0,
+			"TotalRecovered": 1290,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Spain",
+			"CountryCode": "ES",
+			"Slug": "spain",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 566326,
+			"NewDeaths": 0,
+			"TotalDeaths": 29747,
+			"NewRecovered": 0,
+			"TotalRecovered": 150376,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Sri Lanka",
+			"CountryCode": "LK",
+			"Slug": "sri-lanka",
+			"NewConfirmed": 26,
+			"TotalConfirmed": 3195,
+			"NewDeaths": 0,
+			"TotalDeaths": 12,
+			"NewRecovered": 14,
+			"TotalRecovered": 2983,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Sudan",
+			"CountryCode": "SD",
+			"Slug": "sudan",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 13470,
+			"NewDeaths": 0,
+			"TotalDeaths": 834,
+			"NewRecovered": 0,
+			"TotalRecovered": 6731,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Suriname",
+			"CountryCode": "SR",
+			"Slug": "suriname",
+			"NewConfirmed": 50,
+			"TotalConfirmed": 4579,
+			"NewDeaths": 0,
+			"TotalDeaths": 93,
+			"NewRecovered": 41,
+			"TotalRecovered": 3788,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Swaziland",
+			"CountryCode": "SZ",
+			"Slug": "swaziland",
+			"NewConfirmed": 25,
+			"TotalConfirmed": 5050,
+			"NewDeaths": 0,
+			"TotalDeaths": 98,
+			"NewRecovered": 23,
+			"TotalRecovered": 4188,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Sweden",
+			"CountryCode": "SE",
+			"Slug": "sweden",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 86505,
+			"NewDeaths": 0,
+			"TotalDeaths": 5846,
+			"NewRecovered": 0,
+			"TotalRecovered": 0,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Switzerland",
+			"CountryCode": "CH",
+			"Slug": "switzerland",
+			"NewConfirmed": 465,
+			"TotalConfirmed": 46704,
+			"NewDeaths": 0,
+			"TotalDeaths": 2020,
+			"NewRecovered": 400,
+			"TotalRecovered": 38500,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Syrian Arab Republic (Syria)",
+			"CountryCode": "SY",
+			"Slug": "syria",
+			"NewConfirmed": 30,
+			"TotalConfirmed": 3506,
+			"NewDeaths": 2,
+			"TotalDeaths": 152,
+			"NewRecovered": 15,
+			"TotalRecovered": 827,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Taiwan, Republic of China",
+			"CountryCode": "TW",
+			"Slug": "taiwan",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 498,
+			"NewDeaths": 0,
+			"TotalDeaths": 7,
+			"NewRecovered": 0,
+			"TotalRecovered": 475,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Tajikistan",
+			"CountryCode": "TJ",
+			"Slug": "tajikistan",
+			"NewConfirmed": 37,
+			"TotalConfirmed": 9014,
+			"NewDeaths": 0,
+			"TotalDeaths": 72,
+			"NewRecovered": 35,
+			"TotalRecovered": 7782,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Tanzania, United Republic of",
+			"CountryCode": "TZ",
+			"Slug": "tanzania",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 509,
+			"NewDeaths": 0,
+			"TotalDeaths": 21,
+			"NewRecovered": 0,
+			"TotalRecovered": 183,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Thailand",
+			"CountryCode": "TH",
+			"Slug": "thailand",
+			"NewConfirmed": 12,
+			"TotalConfirmed": 3473,
+			"NewDeaths": 0,
+			"TotalDeaths": 58,
+			"NewRecovered": 0,
+			"TotalRecovered": 3312,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Timor-Leste",
+			"CountryCode": "TL",
+			"Slug": "timor-leste",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 27,
+			"NewDeaths": 0,
+			"TotalDeaths": 0,
+			"NewRecovered": 0,
+			"TotalRecovered": 25,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Togo",
+			"CountryCode": "TG",
+			"Slug": "togo",
+			"NewConfirmed": 7,
+			"TotalConfirmed": 1555,
+			"NewDeaths": 0,
+			"TotalDeaths": 37,
+			"NewRecovered": 23,
+			"TotalRecovered": 1189,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Trinidad and Tobago",
+			"CountryCode": "TT",
+			"Slug": "trinidad-and-tobago",
+			"NewConfirmed": 168,
+			"TotalConfirmed": 2993,
+			"NewDeaths": 1,
+			"TotalDeaths": 51,
+			"NewRecovered": 4,
+			"TotalRecovered": 766,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Tunisia",
+			"CountryCode": "TN",
+			"Slug": "tunisia",
+			"NewConfirmed": 376,
+			"TotalConfirmed": 6635,
+			"NewDeaths": 4,
+			"TotalDeaths": 107,
+			"NewRecovered": 35,
+			"TotalRecovered": 1991,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Turkey",
+			"CountryCode": "TR",
+			"Slug": "turkey",
+			"NewConfirmed": 1509,
+			"TotalConfirmed": 289635,
+			"NewDeaths": 48,
+			"TotalDeaths": 6999,
+			"NewRecovered": 1207,
+			"TotalRecovered": 257731,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Uganda",
+			"CountryCode": "UG",
+			"Slug": "uganda",
+			"NewConfirmed": 326,
+			"TotalConfirmed": 4703,
+			"NewDeaths": 3,
+			"TotalDeaths": 52,
+			"NewRecovered": 0,
+			"TotalRecovered": 1998,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Ukraine",
+			"CountryCode": "UA",
+			"Slug": "ukraine",
+			"NewConfirmed": 3185,
+			"TotalConfirmed": 155558,
+			"NewDeaths": 74,
+			"TotalDeaths": 3206,
+			"NewRecovered": 1415,
+			"TotalRecovered": 70881,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "United Arab Emirates",
+			"CountryCode": "AE",
+			"Slug": "united-arab-emirates",
+			"NewConfirmed": 1007,
+			"TotalConfirmed": 78849,
+			"NewDeaths": 1,
+			"TotalDeaths": 399,
+			"NewRecovered": 521,
+			"TotalRecovered": 68983,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "United Kingdom",
+			"CountryCode": "GB",
+			"Slug": "united-kingdom",
+			"NewConfirmed": 3504,
+			"TotalConfirmed": 367592,
+			"NewDeaths": 9,
+			"TotalDeaths": 41712,
+			"NewRecovered": 32,
+			"TotalRecovered": 1880,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "United States of America",
+			"CountryCode": "US",
+			"Slug": "united-states",
+			"NewConfirmed": 41471,
+			"TotalConfirmed": 6485214,
+			"NewDeaths": 714,
+			"TotalDeaths": 193693,
+			"NewRecovered": 16780,
+			"TotalRecovered": 2434658,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Uruguay",
+			"CountryCode": "UY",
+			"Slug": "uruguay",
+			"NewConfirmed": 7,
+			"TotalConfirmed": 1780,
+			"NewDeaths": 0,
+			"TotalDeaths": 45,
+			"NewRecovered": 12,
+			"TotalRecovered": 1502,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Uzbekistan",
+			"CountryCode": "UZ",
+			"Slug": "uzbekistan",
+			"NewConfirmed": 561,
+			"TotalConfirmed": 46721,
+			"NewDeaths": 7,
+			"TotalDeaths": 384,
+			"NewRecovered": 502,
+			"TotalRecovered": 43359,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Venezuela (Bolivarian Republic)",
+			"CountryCode": "VE",
+			"Slug": "venezuela",
+			"NewConfirmed": 967,
+			"TotalConfirmed": 59630,
+			"NewDeaths": 9,
+			"TotalDeaths": 477,
+			"NewRecovered": 769,
+			"TotalRecovered": 47729,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Viet Nam",
+			"CountryCode": "VN",
+			"Slug": "vietnam",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 1060,
+			"NewDeaths": 0,
+			"TotalDeaths": 35,
+			"NewRecovered": 8,
+			"TotalRecovered": 910,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Western Sahara",
+			"CountryCode": "EH",
+			"Slug": "western-sahara",
+			"NewConfirmed": 0,
+			"TotalConfirmed": 10,
+			"NewDeaths": 0,
+			"TotalDeaths": 1,
+			"NewRecovered": 0,
+			"TotalRecovered": 8,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Yemen",
+			"CountryCode": "YE",
+			"Slug": "yemen",
+			"NewConfirmed": 2,
+			"TotalConfirmed": 2009,
+			"NewDeaths": 0,
+			"TotalDeaths": 582,
+			"NewRecovered": 0,
+			"TotalRecovered": 1211,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Zambia",
+			"CountryCode": "ZM",
+			"Slug": "zambia",
+			"NewConfirmed": 143,
+			"TotalConfirmed": 13466,
+			"NewDeaths": 6,
+			"TotalDeaths": 312,
+			"NewRecovered": 108,
+			"TotalRecovered": 12007,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		},
+		{
+			"Country": "Zimbabwe",
+			"CountryCode": "ZW",
+			"Slug": "zimbabwe",
+			"NewConfirmed": 29,
+			"TotalConfirmed": 7508,
+			"NewDeaths": 0,
+			"TotalDeaths": 224,
+			"NewRecovered": 15,
+			"TotalRecovered": 5675,
+			"Date": "2020-09-13T10:23:40Z",
+			"Premium": {
+				
+			}
+		}
+	],
+	"Date": "2020-09-13T10:23:40Z"
+}

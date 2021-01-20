@@ -1,0 +1,19 @@
+./gradlew war
+gradlew build
+./gradlew bootWar
+
+./startup.sh
+./catalina.sh run
+
+sudo systemctl stop firewalld
+docker build -t spring-rest-oracle-demo .
+docker run -p 8082:8082 spring-rest-oracle-demo
+
+docker inspect spring-rest-oracle-demo
+docker inspect 0da06bdc9b71 | grep "IPAddress"
+docker inspect 0da06bdc9b71
+
+docker images -a
+docker system prune -a
+
+docker ps -a

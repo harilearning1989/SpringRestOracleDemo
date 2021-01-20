@@ -1,0 +1,224 @@
+[
+  {
+    "key": "AN",
+    "name": "Andaman and Nicobar Islands",
+    "capital": "Port Blair",
+    "numberOfDist": 3
+  },
+  {
+    "key": "AP",
+    "name": "Andhra Pradesh",
+    "capital": "Amaravathi",
+    "numberOfDist": 13
+  },
+  {
+    "key": "AR",
+    "name": "Arunachal Pradesh",
+    "capital": "Itanagar",
+    "numberOfDist": 25
+  },
+  {
+    "key": "AS",
+    "name": "Assam",
+    "capital": "Dispur",
+    "numberOfDist": 33
+  },
+  {
+    "key": "BR",
+    "name": "Bihar",
+    "capital": "Patna",
+    "numberOfDist": 38
+  },
+  {
+    "key": "CG",
+    "name": "Chandigarh",
+    "capital": "Chandigarh",
+    "numberOfDist": 1
+  },
+  {
+    "key": "CH",
+    "name": "Chhattisgarh",
+    "capital": "Raipur",
+    "numberOfDist": 28
+  },
+  {
+    "key": "DH",
+    "name": "Dadra and Nagar Haveli",
+    "capital": "Silvassa",
+    "numberOfDist": 1
+  },
+  {
+    "key": "DD",
+    "name": "Daman and Diu",
+    "capital": "Daman",
+    "numberOfDist": 2
+  },
+  {
+    "key": "DL",
+    "name": "Delhi",
+    "capital": "New Delhi",
+    "numberOfDist": 11
+  },
+  {
+    "key": "GA",
+    "name": "Goa",
+    "capital": "Panaji",
+    "numberOfDist": 2
+  },
+  {
+    "key": "GJ",
+    "name": "Gujarat",
+    "capital": "Gandhinagar",
+    "numberOfDist": 33
+  },
+  {
+    "key": "HR",
+    "name": "Haryana",
+    "capital": "Chandigarh",
+    "numberOfDist": 22
+  },
+  {
+    "key": "HP",
+    "name": "Himachal Pradesh",
+    "capital": "Shimla",
+    "numberOfDist": 12
+  },
+  {
+    "key": "JK",
+    "name": "Jammu and Kashmir",
+    "capital": "Srinagar(Summer)/Jammu(Winter)",
+    "numberOfDist": 20
+  },
+  {
+    "key": "JH",
+    "name": "Jharkhand",
+    "capital": "Ranchi",
+    "numberOfDist": 24
+  },
+  {
+    "key": "KA",
+    "name": "Karnataka",
+    "capital": "Bengaluru",
+    "numberOfDist": 30
+  },
+  {
+    "key": "KL",
+    "name": "Kerala",
+    "capital": "Thiruvananthapuram",
+    "numberOfDist": 14
+  },
+  {
+    "key": "LD",
+    "name": "Lakshadweep",
+    "capital": "Kavaratti",
+    "numberOfDist": 1
+  },
+  {
+    "key": "LK",
+    "name": "Ladakh",
+    "capital": "Leh,Kargil",
+    "numberOfDist": 2
+  },
+  {
+    "key": "MP",
+    "name": "Madhya Pradesh",
+    "capital": "Bhopal",
+    "numberOfDist": 52
+  },
+  {
+    "key": "MH",
+    "name": "Maharashtra",
+    "capital": "Mumbai",
+    "numberOfDist": 36
+  },
+  {
+    "key": "MN",
+    "name": "Manipur",
+    "capital": "Imphal",
+    "numberOfDist": 16
+  },
+  {
+    "key": "ML",
+    "name": "Meghalaya",
+    "capital": "Shillong",
+    "numberOfDist": 11
+  },
+  {
+    "key": "MZ",
+    "name": "Mizoram",
+    "capital": "Aizawl",
+    "numberOfDist": 11
+  },
+  {
+    "key": "NL",
+    "name": "Nagaland",
+    "capital": "Kohima",
+    "numberOfDist": 11
+  },
+  {
+    "key": "OR",
+    "name": "Odisha",
+    "capital": "Bhubaneswar",
+    "numberOfDist": 30
+  },
+  {
+    "key": "PY",
+    "name": "Puducherry",
+    "capital": "Puducherry",
+    "numberOfDist": 4
+  },
+  {
+    "key": "PB",
+    "name": "Punjab",
+    "capital": "Chandigarh",
+    "numberOfDist": 22
+  },
+  {
+    "key": "RJ",
+    "name": "Rajasthan",
+    "capital": "Jaipur",
+    "numberOfDist": 33
+  },
+  {
+    "key": "SK",
+    "name": "Sikkim",
+    "capital": "Gangtok",
+    "numberOfDist": 4
+  },
+  {
+    "key": "TN",
+    "name": "Tamil Nadu",
+    "capital": "Chennai",
+    "numberOfDist": 37
+  },
+  {
+    "key": "TS",
+    "name": "Telangana",
+    "capital": "Hyderabad",
+    "numberOfDist": 33
+  },
+  {
+    "key": "TR",
+    "name": "Tripura",
+    "capital": "Agartala",
+    "numberOfDist": 8
+  },
+  {
+    "key": "UP",
+    "name": "Uttar Pradesh",
+    "capital": "Lucknow",
+    "numberOfDist": 75
+  },
+  {
+    "key": "UK",
+    "name": "Uttarakhand",
+    "capital": "Dehradun",
+    "numberOfDist": 13
+  },
+  {
+    "key": "WB",
+    "name": "West Bengal",
+    "capital": "Kolkata",
+    "numberOfDist": 23
+  }
+]

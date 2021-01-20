@@ -1,0 +1,6 @@
+<countries>
+    <country name="England" region="Europe"
+             subregion="Western Europe" countryCode="eng" />
+    <country name="Scotland" region="Europe"
+             subregion="West Europe" countryCode="sco" />
+</countries>
