@@ -39,9 +39,10 @@ public class JPARelationRestController {
 
             if (title == null) {
                 laserSearchRepository.findAll().forEach(searchList::add);
+            } else {
+                //else
+                laserSearchRepository.findByServiceIdContaining(title).forEach(searchList::add);
             }
-            //else
-            laserSearchRepository.findByServiceIdContaining(title).forEach(searchList::add);
 
             if (searchList.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
