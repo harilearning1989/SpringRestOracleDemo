@@ -105,3 +105,20 @@ INSERT INTO cities(id,name, population) VALUES(7,'Edinburgh', 464000);
 INSERT INTO cities(id,name, population) VALUES(8,'Suzhou', 4327066);
 INSERT INTO cities(id,name, population) VALUES(9,'Zhengzhou', 4122087);
 INSERT INTO cities(id,name, population) VALUES(10,'Berlin', 3671000);
+
+==============================================================================
+--One to many
+
+CREATE TABLE students(
+  std_id number,
+  std_name varchar2(50) ,
+  CONSTRAINT std_id_pk PRIMARY KEY (std_id)
+);
+
+CREATE TABLE assignments(
+  ass_id number,
+  ass_name varchar2(50) ,
+    std_id number,
+  CONSTRAINT ass_id_pk PRIMARY KEY (ass_id),
+  CONSTRAINT std_id_fk FOREIGN KEY (std_id) REFERENCES students(std_id)
+);
