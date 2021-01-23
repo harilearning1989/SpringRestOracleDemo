@@ -42,6 +42,7 @@ public class CommonRestController {
             List<Countries> countries = new ArrayList<Countries>();
             iCountriesService.getAllCountries().forEach(countries::add);
             if (countries.isEmpty()) {
+                System.out.println("SOUT");
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
             return new ResponseEntity<>(countries, HttpStatus.OK);
