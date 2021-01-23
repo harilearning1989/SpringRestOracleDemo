@@ -109,16 +109,15 @@ INSERT INTO cities(id,name, population) VALUES(10,'Berlin', 3671000);
 ==============================================================================
 --One to many
 
-CREATE TABLE students(
-  std_id number,
-  std_name varchar2(50) ,
-  CONSTRAINT std_id_pk PRIMARY KEY (std_id)
+create table LASER_SEARCH(LOOKUP_ID number,SERVICE_ID varchar2(50),constraint LOOKUP_ID_PK PRIMARY  KEY(LOOKUP_ID));
+CREATE TABLE SERVICE_AUDIT (AUDIT_ID NUMBER,AUDIT_NAME VARCHAR2(50),LOOKUP_ID NUMBER,
+    CONSTRAINT LOOKUP_ID_FK FOREIGN KEY (LOOKUP_ID) REFERENCES LASER_SEARCH (LOOKUP_ID),
+    CONSTRAINT AUDIT_ID_PK PRIMARY KEY (AUDIT_ID)
 );
-
-CREATE TABLE assignments(
-  ass_id number,
-  ass_name varchar2(50) ,
-    std_id number,
-  CONSTRAINT ass_id_pk PRIMARY KEY (ass_id),
-  CONSTRAINT std_id_fk FOREIGN KEY (std_id) REFERENCES students(std_id)
+CREATE TABLE CLIENT_AUDIT (CLIENT_AUDIT_ID NUMBER,CLIENT_AUDIT_NAME VARCHAR2(50),SERVICE_AUDIT_ID NUMBER,
+    CONSTRAINT SERVICE_AUDIT_ID_FK FOREIGN KEY (SERVICE_AUDIT_ID) REFERENCES SERVICE_AUDIT (AUDIT_ID),
+    CONSTRAINT CLIENT_AUDIT_ID_PK PRIMARY KEY (CLIENT_AUDIT_ID)
 );
+select * from LASER_SEARCH;
+select * from SERVICE_AUDIT;
+select * from CLIENT_AUDIT;

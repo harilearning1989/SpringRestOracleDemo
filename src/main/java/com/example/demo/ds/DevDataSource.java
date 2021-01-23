@@ -39,7 +39,7 @@ public class DevDataSource {
                 = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         HashMap<String, Object> properties = new HashMap<>();
-        properties.put("hibernate.hbm2ddl.auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
+        //properties.put("hibernate.hbm2ddl.auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
         properties.put("hibernate.dialect", env.getProperty("spring.jpa.database-platform"));
         properties.put("hibernate.show-sql", env.getProperty("spring.jpa.show-sql"));
         properties.put("hibernate.format-sql", env.getProperty("spring.jpa.format-sql"));
