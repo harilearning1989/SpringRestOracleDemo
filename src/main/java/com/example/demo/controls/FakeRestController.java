@@ -54,7 +54,7 @@ public class FakeRestController {
 
     @RequestMapping(value = "/countriesMultiThread", method = RequestMethod.GET)
     public Integer countriesMultiThread() throws ExecutionException, InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         List<Future<List<Countries>>> list = new ArrayList<>();
 
         long startTime = System.currentTimeMillis();
