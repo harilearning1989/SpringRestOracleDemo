@@ -1,0 +1,224 @@
+2021-01-19 20:12:52.907  INFO 5712 --- [Test worker] com.example.demo.OracleApplicationTests  : Starting OracleApplicationTests using Java 11.0.1 on DESKTOP-JJG7BGH with PID 5712 (started by Hari in D:\Workspace\IntelliJWork\SpringRestOracleDemo)
+2021-01-19 20:12:52.913  INFO 5712 --- [Test worker] com.example.demo.OracleApplicationTests  : No active profile set, falling back to default profiles: default
+2021-01-19 20:12:54.919  INFO 5712 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 20:12:55.030  INFO 5712 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 10 JPA repository interfaces.
+2021-01-19 20:12:55.319  INFO 5712 --- [Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e932b4e-8c77-3f65-be0a-55baee0fd481
+2021-01-19 20:12:56.684  INFO 5712 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 20:12:56.744  INFO 5712 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-19 20:12:56.901  INFO 5712 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-19 20:12:57.144  INFO 5712 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-19 20:12:57.149  WARN 5712 --- [Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-01-19 20:12:58.309  INFO 5712 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-19 20:12:58.364  INFO 5712 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-01-19 20:13:46.086  INFO 5712 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 20:13:46.096  INFO 5712 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:13:46.923  WARN 5712 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-19 20:13:47.659  INFO 5712 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-19 20:13:47.889  INFO 5712 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-01-19 20:13:47.901  INFO 5712 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'asyncExecutor'
+2021-01-19 20:13:47.959  INFO 5712 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-19 20:13:49.872  INFO 5712 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-19 20:13:49.919  INFO 5712 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-19 20:13:49.975  INFO 5712 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 20:13:50.168  WARN 5712 --- [Test worker] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:13:50.172  WARN 5712 --- [Test worker] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:13:50.176  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCountriesUsingGET_1
+2021-01-19 20:13:50.221  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_1
+2021-01-19 20:13:50.225  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_1
+2021-01-19 20:13:50.347  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountriesUsingGET_1
+2021-01-19 20:13:50.394  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloWorldUsingGET_1
+2021-01-19 20:13:50.420  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-01-19 20:13:50.424  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-01-19 20:13:50.431  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
+2021-01-19 20:13:50.464  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountryCurrencyUsingGET_1
+2021-01-19 20:13:50.488  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByClaimAmountGreaterThanEqualUsingGET_1
+2021-01-19 20:13:50.536  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_2
+2021-01-19 20:13:50.538  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_2
+2021-01-19 20:13:50.545  INFO 5712 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_2
+2021-01-19 20:13:50.605  INFO 5712 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-19 20:13:51.906  INFO 5712 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-19 20:13:51.929  INFO 5712 --- [Test worker] com.example.demo.OracleApplicationTests  : Started OracleApplicationTests in 61.23 seconds (JVM running for 63.945)
+2021-01-19 20:13:51.941  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : =====================Logging Start====================================
+2021-01-19 20:13:51.942  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : JAVA_HOME==
+2021-01-19 20:13:51.943  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : app.name==
+2021-01-19 20:13:51.944  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : local.server.port==:
+2021-01-19 20:13:51.946  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:13:51.946  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:13:51.946  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : ======================Logging End======================================
+2021-01-19 20:13:51.949  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:13:51.949  INFO 5712 --- [Test worker] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:13:52.907  INFO 5712 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'asyncExecutor'
+2021-01-19 20:13:52.912  INFO 5712 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:13:52.917  INFO 5712 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-19 20:13:53.033  INFO 5712 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-19 20:35:26.442  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : Starting OracleApplication using Java 11.0.1 on DESKTOP-JJG7BGH with PID 9900 (D:\Workspace\IntelliJWork\SpringRestOracleDemo\build\classes\java\main started by Hari in D:\Workspace\IntelliJWork\SpringRestOracleDemo)
+2021-01-19 20:35:26.446  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : No active profile set, falling back to default profiles: default
+2021-01-19 20:35:26.540  INFO 9900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\Softwares\Build\gradle-6.6.1\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.8.0.0\df9cff9b91c47d06b9a0482d566ee2d83a03e586\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/E:/Softwares/Build/gradle-6.6.1/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.8.0.0/df9cff9b91c47d06b9a0482d566ee2d83a03e586/oraclepki.jar
+2021-01-19 20:35:26.540  INFO 9900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-19 20:35:26.540  INFO 9900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-19 20:35:29.670  INFO 9900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 20:35:29.791  INFO 9900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 10 JPA repository interfaces.
+2021-01-19 20:35:30.145  INFO 9900 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=62d37e5e-28c6-37e8-8cb2-5d4fa34bd47a
+2021-01-19 20:35:32.041  INFO 9900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-01-19 20:35:32.066  INFO 9900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-19 20:35:32.067  INFO 9900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 20:35:32.242  INFO 9900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-19 20:35:32.242  INFO 9900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5701 ms
+2021-01-19 20:35:33.016  INFO 9900 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 20:35:33.135  INFO 9900 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-19 20:35:33.567  INFO 9900 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-19 20:35:33.755  INFO 9900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-19 20:35:33.762  WARN 9900 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-01-19 20:35:34.739  INFO 9900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-19 20:35:34.789  INFO 9900 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-01-19 20:36:21.225  INFO 9900 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 20:36:21.337  INFO 9900 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:36:21.408  INFO 9900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-19 20:36:22.110  WARN 9900 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-19 20:36:22.461  INFO 9900 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-19 20:36:22.573  INFO 9900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-01-19 20:36:22.574  INFO 9900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'asyncExecutor'
+2021-01-19 20:36:22.602  INFO 9900 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-19 20:36:23.846  INFO 9900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-19 20:36:24.197  INFO 9900 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-19 20:36:24.224  INFO 9900 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-19 20:36:24.276  INFO 9900 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 20:36:24.510  WARN 9900 --- [restartedMain] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:36:24.515  WARN 9900 --- [restartedMain] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:36:24.519  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCountriesUsingGET_1
+2021-01-19 20:36:24.562  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_1
+2021-01-19 20:36:24.565  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_1
+2021-01-19 20:36:24.668  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountriesUsingGET_1
+2021-01-19 20:36:24.695  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloWorldUsingGET_1
+2021-01-19 20:36:24.715  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-01-19 20:36:24.718  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-01-19 20:36:24.723  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
+2021-01-19 20:36:24.748  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountryCurrencyUsingGET_1
+2021-01-19 20:36:24.766  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByClaimAmountGreaterThanEqualUsingGET_1
+2021-01-19 20:36:24.801  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_2
+2021-01-19 20:36:24.803  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_2
+2021-01-19 20:36:24.808  INFO 9900 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_2
+2021-01-19 20:36:24.873  INFO 9900 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-19 20:36:25.857  INFO 9900 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-19 20:36:25.878  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : Started OracleApplication in 60.786 seconds (JVM running for 62.399)
+2021-01-19 20:36:25.887  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : =====================Logging Start====================================
+2021-01-19 20:36:25.887  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : JAVA_HOME==
+2021-01-19 20:36:25.887  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : app.name==
+2021-01-19 20:36:25.888  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : local.server.port==:
+2021-01-19 20:36:25.889  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:36:25.890  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:36:25.890  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : ======================Logging End======================================
+2021-01-19 20:36:25.892  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:36:25.892  INFO 9900 --- [restartedMain] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:38:12.644  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : Starting OracleApplication using Java 11.0.1 on DESKTOP-JJG7BGH with PID 6916 (D:\Workspace\IntelliJWork\SpringRestOracleDemo\build\classes\java\main started by Hari in D:\Workspace\IntelliJWork\SpringRestOracleDemo)
+2021-01-19 20:38:12.647  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : No active profile set, falling back to default profiles: default
+2021-01-19 20:38:12.733  INFO 6916 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\Softwares\Build\gradle-6.6.1\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.8.0.0\df9cff9b91c47d06b9a0482d566ee2d83a03e586\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/E:/Softwares/Build/gradle-6.6.1/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.8.0.0/df9cff9b91c47d06b9a0482d566ee2d83a03e586/oraclepki.jar
+2021-01-19 20:38:12.733  INFO 6916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-19 20:38:12.734  INFO 6916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-19 20:38:14.322  INFO 6916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 20:38:14.424  INFO 6916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 10 JPA repository interfaces.
+2021-01-19 20:38:14.754  INFO 6916 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=62d37e5e-28c6-37e8-8cb2-5d4fa34bd47a
+2021-01-19 20:38:15.904  INFO 6916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-01-19 20:38:15.915  INFO 6916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-19 20:38:15.916  INFO 6916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 20:38:16.018  INFO 6916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-19 20:38:16.019  INFO 6916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3285 ms
+2021-01-19 20:38:16.591  INFO 6916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 20:38:16.669  INFO 6916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-19 20:38:16.860  INFO 6916 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-19 20:38:16.977  INFO 6916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-19 20:38:16.992  WARN 6916 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-01-19 20:38:17.381  INFO 6916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-19 20:38:17.414  INFO 6916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-01-19 20:39:03.327  INFO 6916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 20:39:03.335  INFO 6916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:39:03.361  INFO 6916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-19 20:39:03.875  WARN 6916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-19 20:39:04.186  INFO 6916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-19 20:39:04.312  INFO 6916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-01-19 20:39:04.314  INFO 6916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'asyncExecutor'
+2021-01-19 20:39:04.358  INFO 6916 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-19 20:39:05.361  INFO 6916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-19 20:39:05.736  INFO 6916 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-19 20:39:05.758  INFO 6916 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-19 20:39:05.800  INFO 6916 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 20:39:05.984  WARN 6916 --- [restartedMain] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:39:05.990  WARN 6916 --- [restartedMain] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:39:05.995  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCountriesUsingGET_1
+2021-01-19 20:39:06.047  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_1
+2021-01-19 20:39:06.051  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_1
+2021-01-19 20:39:06.165  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountriesUsingGET_1
+2021-01-19 20:39:06.191  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloWorldUsingGET_1
+2021-01-19 20:39:06.207  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-01-19 20:39:06.209  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-01-19 20:39:06.214  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
+2021-01-19 20:39:06.237  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountryCurrencyUsingGET_1
+2021-01-19 20:39:06.247  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByClaimAmountGreaterThanEqualUsingGET_1
+2021-01-19 20:39:06.281  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_2
+2021-01-19 20:39:06.283  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_2
+2021-01-19 20:39:06.290  INFO 6916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_2
+2021-01-19 20:39:06.336  INFO 6916 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-19 20:39:07.216  INFO 6916 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-19 20:39:07.236  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : Started OracleApplication in 55.487 seconds (JVM running for 56.273)
+2021-01-19 20:39:07.244  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : =====================Logging Start====================================
+2021-01-19 20:39:07.244  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : JAVA_HOME==
+2021-01-19 20:39:07.244  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : app.name==
+2021-01-19 20:39:07.245  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : local.server.port==:
+2021-01-19 20:39:07.246  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:39:07.246  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:39:07.247  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : ======================Logging End======================================
+2021-01-19 20:39:07.249  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:39:07.249  INFO 6916 --- [restartedMain] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:40:18.513  INFO 2320 --- [Test worker] com.example.demo.OracleApplicationTests  : Starting OracleApplicationTests using Java 11.0.1 on DESKTOP-JJG7BGH with PID 2320 (started by Hari in D:\Workspace\IntelliJWork\SpringRestOracleDemo)
+2021-01-19 20:40:18.517  INFO 2320 --- [Test worker] com.example.demo.OracleApplicationTests  : No active profile set, falling back to default profiles: default
+2021-01-19 20:40:20.179  INFO 2320 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 20:40:20.290  INFO 2320 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 10 JPA repository interfaces.
+2021-01-19 20:40:20.565  INFO 2320 --- [Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e932b4e-8c77-3f65-be0a-55baee0fd481
+2021-01-19 20:40:21.459  INFO 2320 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 20:40:21.542  INFO 2320 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-19 20:40:21.752  INFO 2320 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-19 20:40:21.900  INFO 2320 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-19 20:40:21.906  WARN 2320 --- [Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-01-19 20:40:22.282  INFO 2320 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-19 20:40:22.329  INFO 2320 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-01-19 20:41:07.482  INFO 2320 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 20:41:07.491  INFO 2320 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:41:08.239  WARN 2320 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-19 20:41:08.947  INFO 2320 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-19 20:41:09.190  INFO 2320 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2021-01-19 20:41:09.200  INFO 2320 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'asyncExecutor'
+2021-01-19 20:41:09.252  INFO 2320 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-19 20:41:10.598  INFO 2320 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-19 20:41:10.631  INFO 2320 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-19 20:41:10.679  INFO 2320 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-19 20:41:10.855  WARN 2320 --- [Test worker] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:41:10.859  WARN 2320 --- [Test worker] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-01-19 20:41:10.863  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCountriesUsingGET_1
+2021-01-19 20:41:10.902  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_1
+2021-01-19 20:41:10.906  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_1
+2021-01-19 20:41:11.033  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountriesUsingGET_1
+2021-01-19 20:41:11.062  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloWorldUsingGET_1
+2021-01-19 20:41:11.082  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-01-19 20:41:11.084  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-01-19 20:41:11.089  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
+2021-01-19 20:41:11.114  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCountryCurrencyUsingGET_1
+2021-01-19 20:41:11.129  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByClaimAmountGreaterThanEqualUsingGET_1
+2021-01-19 20:41:11.159  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCropInsuranceUsingGET_2
+2021-01-19 20:41:11.161  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByMandalUsingGET_2
+2021-01-19 20:41:11.167  INFO 2320 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_2
+2021-01-19 20:41:11.201  INFO 2320 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-19 20:41:12.050  INFO 2320 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-19 20:41:12.068  INFO 2320 --- [Test worker] com.example.demo.OracleApplicationTests  : Started OracleApplicationTests in 54.194 seconds (JVM running for 55.739)
+2021-01-19 20:41:12.091  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : =====================Logging Start====================================
+2021-01-19 20:41:12.091  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : JAVA_HOME==
+2021-01-19 20:41:12.092  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : app.name==
+2021-01-19 20:41:12.092  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : local.server.port==:
+2021-01-19 20:41:12.093  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:41:12.094  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:41:12.094  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : ======================Logging End======================================
+2021-01-19 20:41:12.096  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : getHostAddress==192.168.56.1
+2021-01-19 20:41:12.096  INFO 2320 --- [Test worker] com.example.demo.OracleApplication       : getHostName==DESKTOP-JJG7BGH
+2021-01-19 20:41:12.546  INFO 2320 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'asyncExecutor'
+2021-01-19 20:41:12.551  INFO 2320 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 20:41:12.554  INFO 2320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-19 20:41:12.583  INFO 2320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

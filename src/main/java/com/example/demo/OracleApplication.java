@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.Environment;
 
 import javax.transaction.Transactional;
@@ -24,6 +25,7 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @SpringBootApplication
+@EnableFeignClients
 public class OracleApplication implements CommandLineRunner {
 
     //http://localhost:8081/swagger-ui.html
@@ -62,8 +64,8 @@ public class OracleApplication implements CommandLineRunner {
         LOGGER.info("getHostAddress==" + InetAddress.getLocalHost().getHostAddress());
         LOGGER.info("getHostName==" + InetAddress.getLocalHost().getHostName());
         System.out.println("=====================SOUT Ending==============================");
-        savePersonData();
-        saveLaserData();
+        //savePersonData();
+        //saveLaserData();
     }
 
     private void savePersonData() {
