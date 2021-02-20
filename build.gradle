@@ -42,6 +42,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//implementation files('E:/Softwares/JarFiles/ojdbc8.jar')
 }
 
 dependencyManagement {
@@ -53,6 +54,7 @@ dependencyManagement {
 test {
 	useJUnitPlatform()
 }
-war {
-	archiveName 'SpringRestOracleDemo12.war'
+bootWar {
+	archiveName 'SpringRestOracleDemo.war'
 }
+
