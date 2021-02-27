@@ -24,9 +24,9 @@ import org.springframework.core.task.TaskExecutor;
 
 import javax.sql.DataSource;
 
-@Configuration
+/*@Configuration
 @EnableAutoConfiguration
-@EnableBatchProcessing
+@EnableBatchProcessing*/
 public class CropInsuranceBatchConfig extends DefaultBatchConfigurer {
     @Autowired
     public JobBuilderFactory jobBuilderFactory;

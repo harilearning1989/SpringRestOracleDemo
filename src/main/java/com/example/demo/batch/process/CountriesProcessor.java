@@ -8,26 +8,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class CountriesProcessor implements ItemProcessor<CountriesDTO, Countries> {
 
-    /*@Autowired
-    private SalesOrderRepository salesOrderRepository;*/
-
     @Override
-    public Countries process(final CountriesDTO conDto) throws Exception {
+    public Countries process(final CountriesDTO dto) throws Exception {
         final Countries countries = new Countries();
+        countries.setName(dto.getName());
+        countries.setAlpha2(dto.getAlpha2());
+        countries.setAlpha3(dto.getAlpha3());
+        countries.setCountryCode(dto.getCountryCode());
+        countries.setRegion(dto.getRegion());
+        countries.setSubRegion(dto.getSubRegion());
+        countries.setIntermediateRegion(dto.getIntermediateRegion());
+        countries.setRegionCode(dto.getRegionCode());
+        countries.setSubRegionCode(dto.getSubRegionCode());
+        countries.setIntermediateRegionCode(dto.getIntermediateRegionCode());
 
-        countries.setName(conDto.getName());
-        countries.setAlpha2(conDto.getAlpha2());
-        countries.setAlpha3(conDto.getAlpha3());
-        countries.setCountryCode(conDto.getCountryCode());
-        countries.setRegion(conDto.getRegion());
-        countries.setSubRegion(conDto.getSubRegion());
-        countries.setIntermediateRegion(conDto.getIntermediateRegion());
-        countries.setRegionCode(conDto.getRegionCode());
-        countries.setSubRegionCode(conDto.getSubRegionCode());
-        countries.setIntermediateRegionCode(conDto.getIntermediateRegionCode());
-
-        System.out.println(countries.getName() + "===Region==" + countries.getRegion());
         return countries;
     }
-
 }
+

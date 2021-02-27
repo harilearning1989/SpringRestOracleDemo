@@ -1,24 +1,41 @@
 package com.example.demo.batch.read;
 
 import com.example.demo.dto.CountriesDTO;
-import org.springframework.batch.item.json.JacksonJsonObjectReader;
-import org.springframework.batch.item.json.JsonItemReader;
-import org.springframework.batch.item.json.builder.JsonItemReaderBuilder;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.StepExecution;
+import org.springframework.batch.core.annotation.BeforeStep;
+import org.springframework.batch.item.file.FlatFileItemReader;
+import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
+import org.springframework.batch.item.file.mapping.DefaultLineMapper;
+import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.stereotype.Component;
 
-@Component
-public class CountriesReader extends JsonItemReader<CountriesDTO> {
+public class CountriesReader extends FlatFileItemReader<CountriesDTO> {
 
-    @Bean
-    public JsonItemReader itemReader() {
-        return new JsonItemReaderBuilder<>()
-                .jsonObjectReader(new JacksonJsonObjectReader<>(CountriesDTO.class))
-                .resource(new ClassPathResource("json/Countries.json"))
-                .name("movieJsonItemReader")
-                .build();
+    @BeforeStep
+    public void beforeStep(final StepExecution stepExecution) {
+        JobParameters parameters = stepExecution.getJobExecution().getJobParameters();
+        System.out.println("fileName===" + parameters.getString("fileName"));
     }
 
+    @Bean
+    public FlatFileItemReader<CountriesDTO> reader() {
+        FlatFileItemReader<CountriesDTO> reader = new FlatFileItemReader<CountriesDTO>();
+        reader.setResource(new ClassPathResource("DataFiles/CountriesRegions.csv"));
 
+        reader.setLineMapper(new DefaultLineMapper<CountriesDTO>() {{
+            setLineTokenizer(new DelimitedLineTokenizer() {{
+                setNames(new String[]{"name", "alpha2", "alpha3", "countrycode", "region","subregion",
+                        "intermediateregion", "regioncode", "subregioncode","intermediateregioncode"});
+            }});
+
+            setFieldSetMapper(new BeanWrapperFieldSetMapper() {{
+                setTargetType(CountriesDTO.class);
+            }});
+
+        }});
+        reader.setLinesToSkip(1);
+        return reader;
+    }
 }

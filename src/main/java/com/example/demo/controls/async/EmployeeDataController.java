@@ -12,13 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class EmployeeDataController
-{
+public class EmployeeDataController {
     private static Logger log = LoggerFactory.getLogger(EmployeeDataController.class);
 
     @RequestMapping(value = "/addresses", method = RequestMethod.GET)
-    public EmployeeAddresses getAddresses()
-    {
+    public EmployeeAddresses getAddresses() {
         log.info("get addresses Start");
 
         EmployeeAddresses employeeAddressesList = new EmployeeAddresses();
@@ -47,8 +45,7 @@ public class EmployeeDataController
     }
 
     @RequestMapping(value = "/phones", method = RequestMethod.GET)
-    public EmployeePhone getPhoneNumbers()
-    {
+    public EmployeePhone getPhoneNumbers() {
         log.info("get phones Start");
 
         EmployeePhone employeePhone = new EmployeePhone();
@@ -65,8 +62,7 @@ public class EmployeeDataController
     }
 
     @RequestMapping(value = "/names", method = RequestMethod.GET)
-    public EmployeeNames getEmployeeName()
-    {
+    public EmployeeNames getEmployeeName() {
         log.info("get names Start");
 
         EmployeeNames employeeNamesList = new EmployeeNames();

@@ -24,8 +24,7 @@ public class AsyncController {
     private AsyncService service;
 
     @RequestMapping(value = "/testAsynch", method = RequestMethod.GET)
-    public void testAsynch() throws InterruptedException, ExecutionException
-    {
+    public void testAsynch() throws InterruptedException, ExecutionException {
         log.info("testAsynch Start");
 
         CompletableFuture<EmployeeAddresses> employeeAddress = service.getEmployeeAddress();
