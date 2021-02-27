@@ -22,9 +22,9 @@ import org.springframework.core.task.TaskExecutor;
 
 import javax.sql.DataSource;
 
-/*@Configuration
+@Configuration
 @EnableAutoConfiguration
-@EnableBatchProcessing*/
+@EnableBatchProcessing
 public class CountriesBatchConfig extends DefaultBatchConfigurer {
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
@@ -52,7 +52,7 @@ public class CountriesBatchConfig extends DefaultBatchConfigurer {
     public Step step1() {
         return stepBuilderFactory.get("step1")
                 .<CountriesDTO, Countries>chunk(100)
-                .reader(new CountriesReader().itemReader())
+                .reader(new CountriesReader().reader())
                 .processor(countriesProcessor)
                 .writer(countriesWriter)
                 .taskExecutor(taskExecutor())
@@ -64,11 +64,12 @@ public class CountriesBatchConfig extends DefaultBatchConfigurer {
         // override to do not set datasource even if a datasource exist.
         // initialize will use a Map based JobRepository (instead of database)
     }
+
     @Bean
     public TaskExecutor taskExecutor() {
         SimpleAsyncTaskExecutor simpleAsyncTaskExecutor = new SimpleAsyncTaskExecutor();
         simpleAsyncTaskExecutor.setConcurrencyLimit(5);
         return simpleAsyncTaskExecutor;
     }
-
 }
+
