@@ -1,6 +1,6 @@
 package com.example.demo.controls;
 
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.entity.CropInsurance;
 import com.example.demo.services.IQueryMethodsService;
 import io.swagger.annotations.Api;
@@ -117,11 +117,11 @@ public class QueryMethodsRestController {
     }
 
     @GetMapping("/intRegionNull")
-    public List<Countries> findByIntRegionNull() {
+    public List<CountriesEntity> findByIntRegionNull() {
         return iQueryMethodsService.findByIntRegionNull();
     }
     @GetMapping("/intRegionNotNull")
-    public List<Countries> findByIntRegionNotNull() {
+    public List<CountriesEntity> findByIntRegionNotNull() {
         return iQueryMethodsService.findByIntRegionNotNull();
     }
 

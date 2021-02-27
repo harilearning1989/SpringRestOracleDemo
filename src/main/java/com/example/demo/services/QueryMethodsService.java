@@ -1,6 +1,6 @@
 package com.example.demo.services;
 
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.entity.CropInsurance;
 import com.example.demo.repos.ICountriesRepository;
 import com.example.demo.repos.IQueryMethodsRepository;
@@ -75,11 +75,11 @@ public class QueryMethodsService implements IQueryMethodsService {
         return iQueryMethodsRepository.findByClaimAmountGreaterThanEqual(claimAmount);
     }
     @Override
-    public List<Countries> findByIntRegionNull() {
+    public List<CountriesEntity> findByIntRegionNull() {
         return iCountriesRepository.findByIntRegionNull();
     }
     @Override
-    public List<Countries> findByIntRegionNotNull() {
+    public List<CountriesEntity> findByIntRegionNotNull() {
         return iCountriesRepository.findByIntRegionNotNull();
     }
     @Override

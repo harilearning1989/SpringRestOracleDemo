@@ -9,8 +9,8 @@ import java.util.List;
 @Repository
 public interface CountriesRepository extends CrudRepository<Countries, Integer> {
 
-    public List<Countries> findByIntRegionNull();
+    public List<Countries> findByIntermediateRegionNull();
 
-    public List<Countries> findByIntRegionNotNull();
+    public List<Countries> findByIntermediateRegionNotNull();
 
 }

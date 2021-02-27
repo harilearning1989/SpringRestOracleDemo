@@ -1,10 +1,8 @@
 package com.example.demo.services;
 
-import com.example.demo.entity.Countries;
-
-import java.util.List;
+import com.example.demo.entity.CountriesEntity;
 
 public interface ICountriesService {
 
-    public Iterable<Countries> getAllCountries();
+    public Iterable<CountriesEntity> getAllCountries();
 }

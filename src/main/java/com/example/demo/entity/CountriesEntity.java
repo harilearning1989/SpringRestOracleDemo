@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Countries")
-public class Countries {
+public class CountriesEntity {
 
     @Id
     @Column(name = "country_id")
@@ -143,7 +143,7 @@ public class Countries {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Countries countries = (Countries) o;
+        CountriesEntity countries = (CountriesEntity) o;
         return id == countries.id &&
                 alpha2 == countries.alpha2 &&
                 alpha3 == countries.alpha3 &&

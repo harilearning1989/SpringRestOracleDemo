@@ -1,6 +1,6 @@
 package com.example.demo.controls;
 
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.services.ICountriesService;
 import io.swagger.annotations.Api;
 import org.slf4j.Logger;
@@ -37,9 +37,9 @@ public class CommonRestController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<Countries>> getAllCountries() {
+    public ResponseEntity<List<CountriesEntity>> getAllCountries() {
         try {
-            List<Countries> countries = new ArrayList<Countries>();
+            List<CountriesEntity> countries = new ArrayList<CountriesEntity>();
             iCountriesService.getAllCountries().forEach(countries::add);
             if (countries.isEmpty()) {
                 System.out.println("SOUT");

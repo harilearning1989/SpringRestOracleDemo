@@ -1,7 +1,7 @@
 package com.example.demo.controls;
 
 import com.example.demo.entity.City;
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.services.EmployeeService;
 import com.example.demo.services.ICityService;
 import io.swagger.annotations.Api;
@@ -32,55 +32,55 @@ public class PagingAndSortingController {
     private ICityService cityService;
 
     @GetMapping("defaultSort")
-    public ResponseEntity<List<Countries>> getAllEmployees(
+    public ResponseEntity<List<CountriesEntity>> getAllEmployees(
             @RequestParam(defaultValue = "0") Integer pageNo,
             @RequestParam(defaultValue = "10") Integer pageSize,
             @RequestParam(defaultValue = "name") String sortBy) {
-        List<Countries> list = service.getAllEmployees(pageNo, pageSize, sortBy);
+        List<CountriesEntity> list = service.getAllEmployees(pageNo, pageSize, sortBy);
 
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
     @GetMapping("desendSort")
-    public ResponseEntity<List<Countries>> getAllEmployeesDescending(
+    public ResponseEntity<List<CountriesEntity>> getAllEmployeesDescending(
             @RequestParam(defaultValue = "0") Integer pageNo,
             @RequestParam(defaultValue = "10") Integer pageSize,
             @RequestParam(defaultValue = "name") String sortBy) {
-        List<Countries> list = service.getAllEmployeesDescending(pageNo, pageSize, sortBy);
+        List<CountriesEntity> list = service.getAllEmployeesDescending(pageNo, pageSize, sortBy);
 
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
 
     @GetMapping("pagingOnly")
-    public ResponseEntity<List<Countries>> getEmpPagingOnly(
+    public ResponseEntity<List<CountriesEntity>> getEmpPagingOnly(
             @RequestParam(defaultValue = "0") Integer pageNo,
             @RequestParam(defaultValue = "10") Integer pageSize) {
-        List<Countries> list = service.getEmpPagingOnly(pageNo, pageSize);
+        List<CountriesEntity> list = service.getEmpPagingOnly(pageNo, pageSize);
 
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
     @GetMapping("sortOnly")
-    public ResponseEntity<List<Countries>> getEmpSortingOnly(
+    public ResponseEntity<List<CountriesEntity>> getEmpSortingOnly(
             @RequestParam(defaultValue = "name") String first,
             @RequestParam(defaultValue = "region") String second) {
-        List<Countries> list = service.getEmpSortingOnly(first, second);
+        List<CountriesEntity> list = service.getEmpSortingOnly(first, second);
 
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
 
     @GetMapping("sortOrder")
-    public ResponseEntity<List<Countries>> getEmpSortOrder() {
-        List<Countries> list = service.getEmpSortOrder();
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<List<CountriesEntity>> getEmpSortOrder() {
+        List<CountriesEntity> list = service.getEmpSortOrder();
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
     @GetMapping("nullsLast")
-    public ResponseEntity<List<Countries>> getEmpSortNullsLast() {
-        List<Countries> list = service.getEmpSortNullsLast();
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<List<CountriesEntity>> getEmpSortNullsLast() {
+        List<CountriesEntity> list = service.getEmpSortNullsLast();
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
     @GetMapping("nullsFirst")
-    public ResponseEntity<List<Countries>> getEmpSortNullsFirst() {
-        List<Countries> list = service.getEmpSortNullsFirst();
-        return new ResponseEntity<List<Countries>>(list, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<List<CountriesEntity>> getEmpSortNullsFirst() {
+        List<CountriesEntity> list = service.getEmpSortNullsFirst();
+        return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/cities")

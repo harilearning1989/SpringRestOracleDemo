@@ -1,39 +1,38 @@
 package com.example.demo.entity;
 
 import io.swagger.annotations.ApiModelProperty;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "EMPLOYEE")
 public class Employee implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idSequence")
-    //@SequenceGenerator(name = "idSequence", sequenceName = "EMP_SEQ", allocationSize = 1)
-    @Column(name = "EMP_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    @Column(name = "id")
     @ApiModelProperty(value = "Employee Id")
-    private Long id;
-    @ApiModelProperty(value = "Employee First Name")
-    @Column(name = "first_name", nullable = false)
+    private long id;
+    @Column(name = "FIRST_NAME")
     private String firstName;
     @ApiModelProperty(value = "Employee Last Name")
-    @Column(name = "last_name", nullable = false)
+    @Column(name = "LAST_NAME")
     private String lastName;
-    @ApiModelProperty(value = "Employee Email Id")
-    @Column(name = "email_address", nullable = false)
-    private String emailId;
-
-    public Employee() {
-
-    }
-
-    public Employee(String firstName, String lastName, String emailId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailId = emailId;
-    }
+    @Column(name = "COMPANY_NAME")
+    private String companyName;
+    @Column(name = "ADDRESS")
+    private String address;
+    @Column(name = "CITY")
+    private String city;
+    @Column(name = "COUNTY")
+    private String county;
+    @Column(name = "STATE")
+    private String state;
+    @Column(name = "ZIP")
+    private String zip;
 
     public long getId() {
         return id;
@@ -41,6 +40,20 @@ public class Employee implements Serializable {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public Employee() {
+    }
+
+    public Employee(String firstName, String lastName, String companyName, String address, String city, String county, String state, String zip) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.companyName = companyName;
+        this.address = address;
+        this.city = city;
+        this.county = county;
+        this.state = state;
+        this.zip = zip;
     }
 
     public String getFirstName() {
@@ -59,11 +72,51 @@ public class Employee implements Serializable {
         this.lastName = lastName;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCounty() {
+        return county;
+    }
+
+    public void setCounty(String county) {
+        this.county = county;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 }

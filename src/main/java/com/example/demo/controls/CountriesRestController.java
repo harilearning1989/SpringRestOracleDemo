@@ -1,6 +1,6 @@
 package com.example.demo.controls;
 
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.services.ICountriesService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,9 +29,9 @@ public class CountriesRestController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<Countries>> getAllCountries() {
+    public ResponseEntity<List<CountriesEntity>> getAllCountries() {
         try {
-            List<Countries> countries = new ArrayList<Countries>();
+            List<CountriesEntity> countries = new ArrayList<CountriesEntity>();
             iCountriesService.getAllCountries().forEach(countries::add);
             if (countries.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);

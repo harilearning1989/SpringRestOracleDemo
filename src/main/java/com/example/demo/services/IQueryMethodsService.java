@@ -1,6 +1,6 @@
 package com.example.demo.services;
 
-import com.example.demo.entity.Countries;
+import com.example.demo.entity.CountriesEntity;
 import com.example.demo.entity.CropInsurance;
 
 import java.util.List;
@@ -20,8 +20,8 @@ public interface IQueryMethodsService {
     List<CropInsurance> findByMandalNameOrCrop(String mandal,String crop);
     List<CropInsurance> findByClaimAmountLessThanEqual(int claimAmount);
     List<CropInsurance> findByClaimAmountGreaterThanEqual(int claimAmount);
-    List<Countries> findByIntRegionNull();
-    List<Countries> findByIntRegionNotNull();
+    List<CountriesEntity> findByIntRegionNull();
+    List<CountriesEntity> findByIntRegionNotNull();
     List<CropInsurance> findByVillNameLike(String villName);
     List<CropInsurance> findByVillNameNotLike(String villName);
     List<CropInsurance> findByVillNameStartingWith(String villName);
