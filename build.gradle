@@ -56,6 +56,6 @@ test {
 	useJUnitPlatform()
 }
 bootWar {
-	archiveName 'SpringRestOracleDemo.war'
+	archiveName 'spring-rest-oracle-demo.war'
 }
 
