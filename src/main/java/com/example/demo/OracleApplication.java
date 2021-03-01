@@ -47,6 +47,13 @@ public class OracleApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("CommandLineRunner===run==");
+        //printEnvironmentDetails();
+        //savePersonData();
+        //saveLaserData();
+    }
+
+    private void printEnvironmentDetails() throws Exception {
         LOGGER.info("=====================Logging Start====================================");
         LOGGER.info("JAVA_HOME==", env.getProperty("JAVA_HOME"));
         LOGGER.info("app.name==", env.getProperty("app.name"));
@@ -64,8 +71,6 @@ public class OracleApplication implements CommandLineRunner {
         LOGGER.info("getHostAddress==" + InetAddress.getLocalHost().getHostAddress());
         LOGGER.info("getHostName==" + InetAddress.getLocalHost().getHostName());
         System.out.println("=====================SOUT Ending==============================");
-        //savePersonData();
-        //saveLaserData();
     }
 
     private void savePersonData() {
