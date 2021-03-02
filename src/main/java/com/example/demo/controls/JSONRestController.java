@@ -30,8 +30,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "Hello World")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/helloWorld")
     public String helloWorld() {
@@ -41,8 +41,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "postCountryCurrency")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @PostMapping(value = "/countryCurrency")
     public List<CountryCurrency> postCountryCurrency(@RequestParam("file") MultipartFile file) {
@@ -62,8 +62,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "readUserJson")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/user")
     public User readUserJson() {
@@ -82,8 +82,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getCountryCurrency")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countryCurrency")
     public List<CountryCurrency> getCountryCurrency() {
@@ -102,8 +102,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getCountriesCodes")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countryCode")
     public List<CountriesCode> getCountriesCodes() {
@@ -121,8 +121,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getCountries")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countries")
     public List<Countries> getCountries() {
@@ -140,8 +140,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "GetAllRegions")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/all")
     public AllCountriesRegion GetAllRegions() {
@@ -159,8 +159,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getTheCountry")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countryState")
     public List<CountryState> getTheCountry() {
@@ -178,8 +178,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getCountries")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/allRegionCountiesByRegion")
     public Set<String> getCountries(@RequestParam(value = "region") String region) {
@@ -203,8 +203,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getTheRegions")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/allRegionCountiesRegion")
     public Set<String> getTheRegions() {
@@ -226,8 +226,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "allCountriesData")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/allRegionCounties")
     public List<AllCountries> allCountriesData() {
@@ -245,8 +245,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "countryStates")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countryStates")
     public List<CountryStates> countryStates() {
@@ -264,8 +264,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getCovidData")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/covidData")
     public CovidData getCovidData() {
@@ -287,8 +287,8 @@ public class JSONRestController {
 
     @ApiOperation(value = "getAddress")
     @ApiResponses(value = {
-            @ApiResponse(code = 100,message = "100 Message"),
-            @ApiResponse(code = 200,message = "200 Success Message")
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/address")
     public CompleteAddress getAddress() {
@@ -301,5 +301,24 @@ public class JSONRestController {
             e.printStackTrace();
         }
         return address;
+    }
+
+    @ApiOperation(value = "readMovies")
+    @ApiResponses(value = {
+            @ApiResponse(code = 100, message = "100 Message"),
+            @ApiResponse(code = 200, message = "200 Success Message")
+    })
+    @GetMapping(value = "/movies")
+    public List<MovieDTO> readMovies() {
+        LOGGER.info("readMovies==========");
+        List<MovieDTO> movieDTOList = null;
+        try {
+            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "movie.json", Charsets.UTF_8);
+            ObjectMapper objectMapper = new ObjectMapper();
+            movieDTOList = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, MovieDTO.class));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return movieDTOList;
     }
 }

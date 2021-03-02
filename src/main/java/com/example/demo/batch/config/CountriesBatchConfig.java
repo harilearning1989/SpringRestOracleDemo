@@ -22,9 +22,9 @@ import org.springframework.core.task.TaskExecutor;
 
 import javax.sql.DataSource;
 
-@Configuration
+/*@Configuration
 @EnableAutoConfiguration
-@EnableBatchProcessing
+@EnableBatchProcessing*/
 public class CountriesBatchConfig extends DefaultBatchConfigurer {
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
