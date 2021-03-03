@@ -1,24 +1,18 @@
 package com.example.demo.controls;
 
 import com.example.demo.dto.*;
-import com.example.demo.utils.IDemoUtils;
-import com.example.demo.utils.IStaticData;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.base.Charsets;
+import com.example.demo.services.JSONReadService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 @RestController
 @RequestMapping("json")
@@ -26,7 +20,8 @@ public class JSONRestController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(JSONRestController.class);
 
-    private static final String JSON_FILE_LOCATION = "json/";
+    @Autowired
+    public JSONReadService jsonReadService;
 
     @ApiOperation(value = "Hello World")
     @ApiResponses(value = {
@@ -47,16 +42,8 @@ public class JSONRestController {
     @PostMapping(value = "/countryCurrency")
     public List<CountryCurrency> postCountryCurrency(@RequestParam("file") MultipartFile file) {
         LOGGER.info("postCountryCurrency==========");
-        List<CountryCurrency> countryRegion = null;
-        String content = IDemoUtils.getBytesFromMultipartFile(file);
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            countryRegion = objectMapper.readValue(content,
-                    objectMapper.getTypeFactory()
-                            .constructCollectionType(List.class, CountryCurrency.class));
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
+        List<CountryCurrency> countryRegion = jsonReadService.postCountryCurrency(file);
+
         return countryRegion;
     }
 
@@ -68,15 +55,7 @@ public class JSONRestController {
     @GetMapping(value = "/user")
     public User readUserJson() {
         LOGGER.info("readUserJson==========");
-        User user = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "users.json", StandardCharsets.UTF_8);
-            //String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "users.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            user = objectMapper.readValue(fixture, User.class);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        User user = jsonReadService.readUserJson();
         return user;
     }
 
@@ -88,15 +67,7 @@ public class JSONRestController {
     @GetMapping(value = "/countryCurrency")
     public List<CountryCurrency> getCountryCurrency() {
         LOGGER.info("getCountryCurrency==========");
-        List<CountryCurrency> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "CountryCurrency.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory()
-                    .constructCollectionType(List.class, CountryCurrency.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<CountryCurrency> countryRegion = jsonReadService.getCountryCurrency();
         return countryRegion;
     }
 
@@ -108,14 +79,7 @@ public class JSONRestController {
     @GetMapping(value = "/countryCode")
     public List<CountriesCode> getCountriesCodes() {
         LOGGER.info("getCountriesCodes==========");
-        List<CountriesCode> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "CountryCode.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, CountriesCode.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<CountriesCode> countryRegion = jsonReadService.getCountriesCodes();
         return countryRegion;
     }
 
@@ -127,14 +91,7 @@ public class JSONRestController {
     @GetMapping(value = "/countries")
     public List<Countries> getCountries() {
         LOGGER.info("getCountries==========");
-        List<Countries> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "Countries.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, Countries.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<Countries> countryRegion = jsonReadService.getCountries();
         return countryRegion;
     }
 
@@ -144,16 +101,9 @@ public class JSONRestController {
             @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/all")
-    public AllCountriesRegion GetAllRegions() {
+    public AllCountriesRegion getAllRegions() {
         LOGGER.info("GetAllRegions==========");
-        AllCountriesRegion countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "all.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, AllCountriesRegion.class);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        AllCountriesRegion countryRegion = jsonReadService.getAllRegions();
         return countryRegion;
     }
 
@@ -165,14 +115,7 @@ public class JSONRestController {
     @GetMapping(value = "/countryState")
     public List<CountryState> getTheCountry() {
         LOGGER.info("getTheCountry==========");
-        List<CountryState> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "CountryState.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, CountryState.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<CountryState> countryRegion = jsonReadService.getTheCountry();
         return countryRegion;
     }
 
@@ -184,20 +127,7 @@ public class JSONRestController {
     @GetMapping(value = "/allRegionCountiesByRegion")
     public Set<String> getCountries(@RequestParam(value = "region") String region) {
         LOGGER.info("getCountries==========");
-        List<AllCountries> countryRegion = null;
-        Set<String> countries = new TreeSet<>();
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "allRegionCounties.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, AllCountries.class));
-            for (AllCountries all : countryRegion) {
-                if (!all.getRegion().isEmpty() && region.equalsIgnoreCase(all.getRegion())) {
-                    countries.add(all.getName());
-                }
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        Set<String> countries = jsonReadService.getCountries(region);
         return countries;
     }
 
@@ -209,18 +139,7 @@ public class JSONRestController {
     @GetMapping(value = "/allRegionCountiesRegion")
     public Set<String> getTheRegions() {
         LOGGER.info("getTheRegions==========");
-        List<AllCountries> countryRegion = null;
-        Set<String> regions = new TreeSet<>();
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "allRegionCounties.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, AllCountries.class));
-            for (AllCountries all : countryRegion) {
-                regions.add(all.getRegion());
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        Set<String> regions = jsonReadService.getTheRegions();
         return regions;
     }
 
@@ -232,14 +151,7 @@ public class JSONRestController {
     @GetMapping(value = "/allRegionCounties")
     public List<AllCountries> allCountriesData() {
         LOGGER.info("allCountriesData==========");
-        List<AllCountries> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "allRegionCounties.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, AllCountries.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<AllCountries> countryRegion = jsonReadService.allCountriesData();
         return countryRegion;
     }
 
@@ -249,16 +161,9 @@ public class JSONRestController {
             @ApiResponse(code = 200, message = "200 Success Message")
     })
     @GetMapping(value = "/countryStates")
-    public List<CountryStates> countryStates() {
+    public List<CountryStates> getCountryStates() {
         LOGGER.info("countryStates==========");
-        List<CountryStates> countryRegion = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "CountryStates.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            countryRegion = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, CountryStates.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<CountryStates> countryRegion = jsonReadService.getCountryStates();
         return countryRegion;
     }
 
@@ -270,18 +175,7 @@ public class JSONRestController {
     @GetMapping(value = "/covidData")
     public CovidData getCovidData() {
         LOGGER.info("getCovidData==========");
-        CovidData covidData = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "CovidData.json", Charsets.UTF_8);
-
-            ObjectMapper objectMapper = new ObjectMapper();
-            covidData = objectMapper.readValue(fixture, CovidData.class);
-            //ClassLoader classLoader = getClass().getClassLoader();
-            //File file = new File(classLoader.getResource("CovidData.json").getFile());
-            //byte[] mapData = Files.readAllBytes(Paths.get(file.getAbsolutePath()));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        CovidData covidData = jsonReadService.getCovidData();
         return covidData;
     }
 
@@ -293,13 +187,7 @@ public class JSONRestController {
     @GetMapping(value = "/address")
     public CompleteAddress getAddress() {
         LOGGER.info("getAddress==========");
-        ObjectMapper objectMapper = new ObjectMapper();
-        CompleteAddress address = null;
-        try {
-            address = objectMapper.readValue(IStaticData.JSONDATA, CompleteAddress.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        CompleteAddress address = jsonReadService.getAddress();
         return address;
     }
 
@@ -311,14 +199,7 @@ public class JSONRestController {
     @GetMapping(value = "/movies")
     public List<MovieDTO> readMovies() {
         LOGGER.info("readMovies==========");
-        List<MovieDTO> movieDTOList = null;
-        try {
-            String fixture = IDemoUtils.readResource(JSON_FILE_LOCATION + "movie.json", Charsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            movieDTOList = objectMapper.readValue(fixture, objectMapper.getTypeFactory().constructCollectionType(List.class, MovieDTO.class));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        List<MovieDTO> movieDTOList = jsonReadService.readMovies();
         return movieDTOList;
     }
 }
