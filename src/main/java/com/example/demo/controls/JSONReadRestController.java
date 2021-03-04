@@ -16,9 +16,9 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("json")
-public class JSONRestController {
+public class JSONReadRestController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(JSONRestController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(JSONReadRestController.class);
 
     @Autowired
     public JSONReadService jsonReadService;

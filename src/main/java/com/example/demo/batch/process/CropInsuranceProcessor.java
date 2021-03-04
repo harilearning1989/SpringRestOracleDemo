@@ -17,7 +17,8 @@ public class CropInsuranceProcessor implements ItemProcessor<CropInsuranceDTO, C
         crop.setBeneficiary(dto.getNameOfTheBeneficiary());
         crop.setCrop(dto.getCrop());
         crop.setExtentHa(dto.getExtentHa());
-        crop.setClaimAmount(dto.getClaimAmountRs());
+        int i = (int) dto.getClaimAmountRs();
+        crop.setClaimAmount(i);
         crop.setBankName(dto.getBankName());
         crop.setBranchName(dto.getBranchName());
         crop.setAccNumber(dto.getAccountNumber());

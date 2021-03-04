@@ -8,7 +8,7 @@ public class CropInsuranceDTO {
     private String nameOfTheBeneficiary;
     private String crop;
     private int extentHa;
-    private int claimAmountRs;
+    private double claimAmountRs;
     private String categoryLoaneeNonLoanee;
     private String bankName;
     private String branchName;
@@ -62,11 +62,11 @@ public class CropInsuranceDTO {
         this.extentHa = extentHa;
     }
 
-    public int getClaimAmountRs() {
+    public double getClaimAmountRs() {
         return claimAmountRs;
     }
 
-    public void setClaimAmountRs(int claimAmountRs) {
+    public void setClaimAmountRs(double claimAmountRs) {
         this.claimAmountRs = claimAmountRs;
     }
 
