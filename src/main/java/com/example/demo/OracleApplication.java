@@ -6,6 +6,7 @@ import com.example.demo.entity.Person;
 import com.example.demo.entity.ServiceAudit;
 import com.example.demo.repos.IPersonRepository;
 import com.example.demo.reposDev.LaserSearchRepository;
+import com.example.demo.utils.IDemoUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.Environment;
 
 import javax.transaction.Transactional;
-import java.lang.reflect.Array;
 import java.net.InetAddress;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -57,6 +57,9 @@ public class OracleApplication implements CommandLineRunner {
         IntSummaryStatistics stats = primes.stream().mapToInt(n -> n).summaryStatistics();
         System.out.println("Max value===" + stats.getMax() + "===Min Value:=" + stats.getMin()
                 + "===Avg Value:==" + stats.getAverage() + "===Count:=" + stats.getCount() + "==Sum:==" + stats.getSum());
+
+        Properties properties = IDemoUtils.fetchProperties();
+        System.out.println(properties.get("name"));
     }
 
     private void printEnvironmentDetails() throws Exception {

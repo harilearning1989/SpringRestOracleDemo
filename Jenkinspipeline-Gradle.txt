@@ -7,7 +7,7 @@ pipeline{
 	 stage('SCM Checkout'){            
          steps{
            echo 'SCM Checkout'
-		   git credentialsId: '49500cc8-0a44-48b7-bfb0-1a16653051bf', url: 'https://github.com/harilearning1989/SpringBootRestMaven.git'
+		   git 'https://github.com/harilearning1989/SpringRestOracleDemo.git'
           }
       }
 	stage('Gradle Package'){
@@ -16,9 +16,9 @@ pipeline{
 		 script{
 			def grdlHome = tool name: 'MAVEN_HOME', type: 'maven'
 			echo "Gradle Home ${grdlHome}"
-			def mvnCMD = "${mvnHome}/bin/mvn"
-			echo "MVN CMD  ${mvnCMD}"
-			bat "${mvnCMD} clean install" 
+			//def mvnCMD = "${mvnHome}/bin/mvn"
+			//echo "MVN CMD  ${mvnCMD}"
+			//bat "${mvnCMD} clean install"
 		 }
 	    }
 	}
