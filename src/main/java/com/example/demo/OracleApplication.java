@@ -16,11 +16,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.Environment;
 
 import javax.transaction.Transactional;
+import java.lang.reflect.Array;
 import java.net.InetAddress;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -48,9 +46,17 @@ public class OracleApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("CommandLineRunner===run==");
+        intSummaryStatistics();
         //printEnvironmentDetails();
         //savePersonData();
         //saveLaserData();
+    }
+
+    private void intSummaryStatistics() {
+        List<Integer> primes = Arrays.asList(1, 2, 3, 4, 5, 33, 22, 32, 43, 78, 3, 2, 22);
+        IntSummaryStatistics stats = primes.stream().mapToInt(n -> n).summaryStatistics();
+        System.out.println("Max value===" + stats.getMax() + "===Min Value:=" + stats.getMin()
+                + "===Avg Value:==" + stats.getAverage() + "===Count:=" + stats.getCount() + "==Sum:==" + stats.getSum());
     }
 
     private void printEnvironmentDetails() throws Exception {
