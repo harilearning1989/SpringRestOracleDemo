@@ -24,10 +24,10 @@ import java.util.stream.IntStream;
 
 @RestController
 @RequestMapping("/fake")
-@Api(value = "FakeRestController")
-public class FakeRestController {
+@Api(value = "FakeFeignRestController")
+public class FakeFeignRestController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FakeRestController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FakeFeignRestController.class);
 
     @Autowired
     private JSONPlaceHolderClient jsonPlaceHolderClient;

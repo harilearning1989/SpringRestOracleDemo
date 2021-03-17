@@ -6,7 +6,7 @@ public class StudentDTO {
     private String studentName;
     private String fatherName;
     private String gender;
-    private long mobile;
+    private String mobile;
     private String category;
 
     public int getStudentId() {
@@ -41,11 +41,11 @@ public class StudentDTO {
         this.gender = gender;
     }
 
-    public long getMobile() {
+    public String getMobile() {
         return mobile;
     }
 
-    public void setMobile(long mobile) {
+    public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 

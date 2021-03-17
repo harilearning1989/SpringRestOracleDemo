@@ -106,7 +106,7 @@ public class CropInsurance {
     }
 
     public void setExtentHa(int extentHa) {
-        this.extentHa = extentHa;
+        this.extentHa = 10;
     }
 
     public int getClaimAmount() {

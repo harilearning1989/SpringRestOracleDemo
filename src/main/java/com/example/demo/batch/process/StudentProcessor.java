@@ -22,7 +22,7 @@ public class StudentProcessor implements ItemProcessor<StudentDTO, Student> {
         student.setStudentName(dto.getStudentName());
         student.setFatherName(dto.getFatherName());
         student.setGender(dto.getGender());
-        student.setMobile(dto.getMobile());
+        student.setMobile(Long.parseLong(dto.getMobile()));
         student.setCategory(dto.getCategory());
         return student;
     }
