@@ -1,17 +1,17 @@
 package com.example.demo.dto.csv;
 
-public class Tutorial {
+public class TutorialDto {
 
     private long id;
     private String title;
     private String description;
     private boolean published;
 
-    public Tutorial() {
+    public TutorialDto() {
 
     }
 
-    public Tutorial(long id, String title, String description, boolean published) {
+    public TutorialDto(long id, String title, String description, boolean published) {
         this.id = id;
         this.title = title;
         this.description = description;

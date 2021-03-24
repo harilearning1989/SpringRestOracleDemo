@@ -25,7 +25,8 @@ public class CriteriaRestController {
     private ICriteriaService iCriteriaService;
 
     @GetMapping("/mandal")
-    public List<CropInsurance> getByMandal(@RequestParam(defaultValue = "Mudigubba") String mandal) {
+    public List<CropInsurance> getByMandal(
+            @RequestParam(defaultValue = "Mudigubba") String mandal) {
         return iCriteriaService.getByMandal(mandal);
     }
     @GetMapping("/mandalAndCrop")
