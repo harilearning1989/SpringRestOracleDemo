@@ -27,6 +27,7 @@ public class QueryMethodsService implements IQueryMethodsService {
     public List<CropInsurance> getByMandal(String mandal) {
         return iQueryMethodsRepository.findByMandalName(mandal);
     }
+
     @Override
     public List<CropInsurance> getByMandalIgnoreCase(String mandal) {
         return iQueryMethodsRepository.findByMandalNameIgnoreCase(mandal);
@@ -46,66 +47,82 @@ public class QueryMethodsService implements IQueryMethodsService {
     public List<String> findMandalName() {
         return iQueryMethodsRepository.findMandalName();
     }
+
     @Override
     public String countTheVillages() {
         return iQueryMethodsRepository.countTheVillages();
     }
+
     @Override
     public String countTheVillagesByMandal(String mandal) {
         return iQueryMethodsRepository.countTheVillagesByMandal(mandal);
     }
+
     @Override
-    public List<CropInsurance> findDistinctByMandalNameAndCrop(String mandal,String crop) {
-        return iQueryMethodsRepository.findDistinctByMandalNameAndCrop(mandal,crop);
+    public List<CropInsurance> findDistinctByMandalNameAndCrop(String mandal, String crop) {
+        return iQueryMethodsRepository.findDistinctByMandalNameAndCrop(mandal, crop);
     }
+
     @Override
-    public List<CropInsurance> findByMandalNameAndCrop(String mandal,String crop) {
-        return iQueryMethodsRepository.findByMandalNameAndCrop(mandal,crop);
+    public List<CropInsurance> findByMandalNameAndCrop(String mandal, String crop) {
+        return iQueryMethodsRepository.findByMandalNameAndCrop(mandal, crop);
     }
+
     @Override
-    public List<CropInsurance> findByMandalNameOrCrop(String mandal,String crop) {
-        return iQueryMethodsRepository.findByMandalNameOrCrop(mandal,crop);
+    public List<CropInsurance> findByMandalNameOrCrop(String mandal, String crop) {
+        return iQueryMethodsRepository.findByMandalNameOrCrop(mandal, crop);
     }
+
     @Override
     public List<CropInsurance> findByClaimAmountLessThanEqual(int claimAmount) {
         return iQueryMethodsRepository.findByClaimAmountLessThanEqual(claimAmount);
     }
+
     @Override
     public List<CropInsurance> findByClaimAmountGreaterThanEqual(int claimAmount) {
         return iQueryMethodsRepository.findByClaimAmountGreaterThanEqual(claimAmount);
     }
+
     @Override
     public List<CountriesEntity> findByIntRegionNull() {
         return iCountriesRepository.findByIntRegionNull();
     }
+
     @Override
     public List<CountriesEntity> findByIntRegionNotNull() {
         return iCountriesRepository.findByIntRegionNotNull();
     }
+
     @Override
     public List<CropInsurance> findByVillNameLike(String villName) {
         return iQueryMethodsRepository.findByVillNameLike(villName);
     }
+
     @Override
     public List<CropInsurance> findByVillNameNotLike(String villName) {
         return iQueryMethodsRepository.findByVillNameNotLike(villName);
     }
+
     @Override
     public List<CropInsurance> findByVillNameStartingWith(String villName) {
         return iQueryMethodsRepository.findByVillNameStartingWith(villName);
     }
+
     @Override
     public List<CropInsurance> findByVillNameEndingWith(String villName) {
         return iQueryMethodsRepository.findByVillNameEndingWith(villName);
     }
+
     @Override
     public List<CropInsurance> findByVillNameContaining(String villName) {
         return iQueryMethodsRepository.findByVillNameContaining(villName);
     }
+
     @Override
     public List<CropInsurance> findByMandalNameOrderByVillNameDesc(String mandal) {
         return iQueryMethodsRepository.findByMandalNameOrderByVillNameDesc(mandal);
     }
+
     @Override
     public List<CropInsurance> findByMandalNameNot(String mandal) {
         return iQueryMethodsRepository.findByMandalNameNot(mandal);
@@ -115,9 +132,30 @@ public class QueryMethodsService implements IQueryMethodsService {
     public List<CropInsurance> findByClaimAmountInOrderByClaimAmount(List<Integer> claimAmount) {
         return iQueryMethodsRepository.findByClaimAmountInOrderByClaimAmount(claimAmount);
     }
+
     @Override
     public List<CropInsurance> findByClaimAmountNotInOrderByClaimAmount(List<Integer> claimAmount) {
         return iQueryMethodsRepository.findByClaimAmountNotInOrderByClaimAmount(claimAmount);
+    }
+
+    @Override
+    public int getMaxClaim() {
+        return iQueryMethodsRepository.getMaxClaim();
+    }
+
+    @Override
+    public int getMinClaim() {
+        return iQueryMethodsRepository.getMinClaim();
+    }
+
+    @Override
+    public double getAvgClaim() {
+        return iQueryMethodsRepository.getAvgClaim();
+    }
+
+    @Override
+    public long getSumClaim() {
+        return iQueryMethodsRepository.getSumClaim();
     }
 
     /*repo.findByAndSort("lannister", Sort.by("firstname"));

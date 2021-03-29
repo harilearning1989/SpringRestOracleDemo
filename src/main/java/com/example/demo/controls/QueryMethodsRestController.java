@@ -33,6 +33,26 @@ public class QueryMethodsRestController {
     //findByStartDateBefore
     //JPA Named Queries
 
+    @GetMapping("/max")
+    public int getMaxClaim() {
+        return iQueryMethodsService.getMaxClaim();
+    }
+
+    @GetMapping("/min")
+    public int getMinClaim() {
+        return iQueryMethodsService.getMinClaim();
+    }
+
+    @GetMapping("/avg")
+    public double getAvgClaim() {
+        return iQueryMethodsService.getAvgClaim();
+    }
+
+    @GetMapping("/sum")
+    public long getSumClaim() {
+        return iQueryMethodsService.getSumClaim();
+    }
+
     @GetMapping("/list")
     public ResponseEntity<List<CropInsurance>> getAllCropInsurance() {
         try {
@@ -53,6 +73,7 @@ public class QueryMethodsRestController {
     public List<CropInsurance> getByMandal(@RequestParam(defaultValue = "Mudigubba") String mandal) {
         return iQueryMethodsService.getByMandal(mandal);
     }
+
     @GetMapping("/mandal/case")
     public List<CropInsurance> getByMandalIgnoreCase(@RequestParam(defaultValue = "Mudigubba") String mandal) {
         return iQueryMethodsService.getByMandalIgnoreCase(mandal);
@@ -73,10 +94,12 @@ public class QueryMethodsRestController {
     public List<String> findMandalName() {
         return iQueryMethodsService.findMandalName();
     }
+
     @GetMapping("/count")
     public String countTheVillages() {
         return iQueryMethodsService.countTheVillages();
     }
+
     @GetMapping("/count/mandal")
     public String countTheVillagesByMandal(
             @RequestParam(defaultValue = "Mudigubba") String mandal) {
@@ -87,21 +110,21 @@ public class QueryMethodsRestController {
     public List<CropInsurance> findByMandalNameAndCrop(
             @RequestParam(defaultValue = "Mudigubba") String mandal,
             @RequestParam(defaultValue = "Groundnut") String crop) {
-        return iQueryMethodsService.findByMandalNameAndCrop(mandal,crop);
+        return iQueryMethodsService.findByMandalNameAndCrop(mandal, crop);
     }
 
     @GetMapping("/mandalOrCrop")
     public List<CropInsurance> findByMandalNameOrCrop(
             @RequestParam(defaultValue = "Mudigubba") String mandal,
             @RequestParam(defaultValue = "Groundnut") String crop) {
-        return iQueryMethodsService.findByMandalNameOrCrop(mandal,crop);
+        return iQueryMethodsService.findByMandalNameOrCrop(mandal, crop);
     }
 
     @GetMapping("/DistMandalAndCrop")
     public List<CropInsurance> findDistinctByMandalNameAndCrop(
             @RequestParam(defaultValue = "Mudigubba") String mandal,
             @RequestParam(defaultValue = "Groundnut") String crop) {
-        return iQueryMethodsService.findDistinctByMandalNameAndCrop(mandal,crop);
+        return iQueryMethodsService.findDistinctByMandalNameAndCrop(mandal, crop);
     }
 
     @GetMapping("/claimAmountLessThanEqual")
@@ -120,6 +143,7 @@ public class QueryMethodsRestController {
     public List<CountriesEntity> findByIntRegionNull() {
         return iQueryMethodsService.findByIntRegionNull();
     }
+
     @GetMapping("/intRegionNotNull")
     public List<CountriesEntity> findByIntRegionNotNull() {
         return iQueryMethodsService.findByIntRegionNotNull();
@@ -160,6 +184,7 @@ public class QueryMethodsRestController {
             @RequestParam(defaultValue = "Mudigubba") String mandal) {
         return iQueryMethodsService.findByMandalNameOrderByVillNameDesc(mandal);
     }
+
     @GetMapping("/mandalNameNot")
     public List<CropInsurance> findByMandalNameNot(
             @RequestParam(defaultValue = "Mudigubba") String mandal) {
@@ -169,7 +194,7 @@ public class QueryMethodsRestController {
     @GetMapping("/claimAmountIn/{amountIn}")
     public List<CropInsurance> findByClaimAmountInOrderByClaimAmount(
             @PathVariable List<Integer> amountIn) {
-        for(Integer amount : amountIn) {
+        for (Integer amount : amountIn) {
             System.out.println("amountIn:=" + amount);
         }
         return iQueryMethodsService.findByClaimAmountInOrderByClaimAmount(amountIn);
@@ -178,7 +203,7 @@ public class QueryMethodsRestController {
     @GetMapping("/claimAmountNotIn/{amountIn}")
     public List<CropInsurance> findByClaimAmountNotInOrderByClaimAmount(
             @PathVariable List<Integer> amountIn) {
-        for(Integer amount : amountIn) {
+        for (Integer amount : amountIn) {
             System.out.println("amountIn:=" + amount);
         }
         return iQueryMethodsService.findByClaimAmountNotInOrderByClaimAmount(amountIn);

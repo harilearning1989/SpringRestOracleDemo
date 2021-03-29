@@ -3,7 +3,6 @@ package com.example.demo.services;
 import com.example.demo.constants.IConstants;
 import com.example.demo.dto.CropInsuranceDTO;
 import com.example.demo.dto.csv.CSVUser;
-import com.example.demo.dto.csv.Tutorial;
 import com.example.demo.utils.CSVHelper;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBean;
@@ -15,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -33,16 +31,6 @@ public class CSVReadServiceImpl implements CSVReadService {
     @Autowired
     private ResourceLoader resourceLoader;
 
-    @Override
-    public List<Tutorial> uploadCSV(MultipartFile file) {
-        List<Tutorial> tutorials = null;
-        try {
-            tutorials = CSVHelper.csvToTutorials(file.getInputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return tutorials;
-    }
 
     @Override
     public List<List<String>> readCsv() {
@@ -98,6 +86,7 @@ public class CSVReadServiceImpl implements CSVReadService {
         }
         return "readUserCsv";
     }
+
     @Override
     public List<CSVUser> readCSVToMode() {
         Iterator<CSVUser> csvUserIterator = null;
@@ -123,33 +112,6 @@ public class CSVReadServiceImpl implements CSVReadService {
             e.printStackTrace();
         }
         return usersList;
-    }
-    @Override
-    public List<Tutorial> save(MultipartFile file) {
-        try {
-            List<Tutorial> tutorials = CSVHelper.csvToTutorials(file.getInputStream());
-            return tutorials;
-        } catch (IOException e) {
-            throw new RuntimeException("fail to store csv data: " + e.getMessage());
-        }
-    }
-    @Override
-    public ByteArrayInputStream load() {
-        ByteArrayInputStream in = CSVHelper.tutorialsToCSV(readTutorialsCSV());
-        return in;
-    }
-    @Override
-    public List<Tutorial> readTutorialsCSV() {
-        Resource resource = resourceLoader.getResource("classpath:DataFiles/Tutorials.csv");
-        File file = null;
-        try {
-            file = resource.getFile();
-            InputStream input = resource.getInputStream();
-            List<Tutorial> tutorials = CSVHelper.csvToTutorials(input);
-            return tutorials;
-        } catch (Exception e) {
-            throw new RuntimeException("fail to store csv data: " + e.getMessage());
-        }
     }
 
     @Override
