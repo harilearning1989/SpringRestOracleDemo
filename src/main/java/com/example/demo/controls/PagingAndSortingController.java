@@ -40,7 +40,7 @@ public class PagingAndSortingController {
 
         return new ResponseEntity<List<CountriesEntity>>(list, new HttpHeaders(), HttpStatus.OK);
     }
-    @GetMapping("desendSort")
+    @GetMapping("descendSort")
     public ResponseEntity<List<CountriesEntity>> getAllEmployeesDescending(
             @RequestParam(defaultValue = "0") Integer pageNo,
             @RequestParam(defaultValue = "10") Integer pageSize,
