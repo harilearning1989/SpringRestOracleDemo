@@ -10,7 +10,6 @@ public class EmployeeDTO {
     private String state;
     private String zip;
 
-
     public EmployeeDTO() {
     }
 
