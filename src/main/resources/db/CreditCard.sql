@@ -1,2 +1,0 @@
-create table CREDIT_CARD(card_id number,Card_Type_Code char(2),Card_Type_Full_Name varchar2(100),Issuing_Bank varchar2(100),Card_Number number,Card_Holder_Name varchar2(100),
-CVV_CVV2 int,Issue_Date date,Expiry_Date date,Billing_Date int,Card_PIN int,Credit_Limit int);
