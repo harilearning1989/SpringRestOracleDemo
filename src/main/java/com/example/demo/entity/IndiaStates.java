@@ -1,9 +1,6 @@
 package com.example.demo.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -29,33 +26,6 @@ public class IndiaStates {
     private int mddsSubDt;
     @Column(name = "MDDS_PLCN")
     private int mddsPlcn;
-
-    @Override
-    public String toString() {
-        return "IndiaStates{" +
-                "mddsStc=" + mddsStc +
-                ", stateName='" + stateName + '\'' +
-                ", districtName='" + districtName + '\'' +
-                ", subDistrictName='" + subDistrictName + '\'' +
-                ", areaName='" + areaName + '\'' +
-                ", mddsDtc=" + mddsDtc +
-                ", mddsSubDt=" + mddsSubDt +
-                ", mddsPlcn=" + mddsPlcn +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        IndiaStates that = (IndiaStates) o;
-        return mddsStc == that.mddsStc && mddsDtc == that.mddsDtc && mddsSubDt == that.mddsSubDt && mddsPlcn == that.mddsPlcn && stateName.equals(that.stateName) && districtName.equals(that.districtName) && subDistrictName.equals(that.subDistrictName) && areaName.equals(that.areaName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(mddsStc, stateName, districtName, subDistrictName, areaName, mddsDtc, mddsSubDt, mddsPlcn);
-    }
 
     public int getId() {
         return id;
@@ -127,5 +97,33 @@ public class IndiaStates {
 
     public void setMddsPlcn(int mddsPlcn) {
         this.mddsPlcn = mddsPlcn;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        IndiaStates that = (IndiaStates) o;
+        return id == that.id && mddsStc == that.mddsStc && mddsDtc == that.mddsDtc && mddsSubDt == that.mddsSubDt && mddsPlcn == that.mddsPlcn && Objects.equals(stateName, that.stateName) && Objects.equals(districtName, that.districtName) && Objects.equals(subDistrictName, that.subDistrictName) && Objects.equals(areaName, that.areaName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, mddsStc, stateName, districtName, subDistrictName, areaName, mddsDtc, mddsSubDt, mddsPlcn);
+    }
+
+    @Override
+    public String toString() {
+        return "IndiaStates{" +
+                "id=" + id +
+                ", mddsStc=" + mddsStc +
+                ", stateName='" + stateName + '\'' +
+                ", districtName='" + districtName + '\'' +
+                ", subDistrictName='" + subDistrictName + '\'' +
+                ", areaName='" + areaName + '\'' +
+                ", mddsDtc=" + mddsDtc +
+                ", mddsSubDt=" + mddsSubDt +
+                ", mddsPlcn=" + mddsPlcn +
+                '}';
     }
 }

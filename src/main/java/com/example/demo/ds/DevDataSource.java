@@ -35,8 +35,9 @@ public class DevDataSource {
         em.setPackagesToScan(
                 new String[]{"com.example.demo.entity"});
 
-        HibernateJpaVendorAdapter vendorAdapter
-                = new HibernateJpaVendorAdapter();
+        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+        //vendorAdapter.setGenerateDdl(true);
+        vendorAdapter.setShowSql(true);
         em.setJpaVendorAdapter(vendorAdapter);
         HashMap<String, Object> properties = new HashMap<>();
         //properties.put("hibernate.hbm2ddl.auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));

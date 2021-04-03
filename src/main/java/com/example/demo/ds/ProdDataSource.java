@@ -37,14 +37,19 @@ public class ProdDataSource {
         em.setPackagesToScan(
                 new String[]{"com.example.demo.entity"});
 
-        HibernateJpaVendorAdapter vendorAdapter
-                = new HibernateJpaVendorAdapter();
+        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+        //vendorAdapter.setGenerateDdl(true);
+        vendorAdapter.setShowSql(true);
         em.setJpaVendorAdapter(vendorAdapter);
+
         HashMap<String, Object> properties = new HashMap<>();
         //properties.put("hibernate.hbm2ddl.auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
         properties.put("hibernate.dialect", env.getProperty("spring.jpa.database-platform"));
         properties.put("spring.jpa.show-sql", env.getProperty("spring.jpa.show-sql"));
         properties.put("spring.jpa.format-sql", env.getProperty("spring.jpa.format-sql"));
+        properties.put("spring.jpa.open-in-view", env.getProperty("spring.jpa.open-in-view"));
+        properties.put("spring.jpa.properties.hibernate.enable_lazy_load_no_trans",
+                env.getProperty("spring.jpa.properties.hibernate.enable_lazy_load_no_trans"));
         em.setJpaPropertyMap(properties);
 
         return em;
