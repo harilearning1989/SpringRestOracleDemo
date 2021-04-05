@@ -41,6 +41,89 @@ public class CSVReadRestController {
     @Value("${csv.read.readCsv}")
     private String load;
 
+    @GetMapping(value = "/states")
+    public List<IndiaStatesDTO> getIndiaStates() {
+        CompletableFuture<List<IndiaStatesDTO>> empFuture =
+                supplyAsync(() -> csvReadService.getIndiaStates());
+        try {
+            return empFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @GetMapping(value = "/readEmp")
+    public List<EmployeeDTO> readEmpCSV() {
+        CompletableFuture<List<EmployeeDTO>> empFuture =
+                supplyAsync(() -> csvReadService.readEmployeeInfo());
+        try {
+            return empFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @GetMapping(value = "/readCrop")
+    public ResponseEntity<List<CropInsuranceDTO>> readCropCSV() {
+        CompletableFuture<List<CropInsuranceDTO>> cropFuture =
+                supplyAsync(() -> csvReadService.readCropDetails());
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(cropFuture.get());
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @GetMapping(value = "/readStudent")
+    public List<StudentDTO> readStudentCSV() {
+        CompletableFuture<List<StudentDTO>> studentFuture =
+                supplyAsync(() -> csvReadService.readStudentInfo());
+        try {
+            return studentFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @GetMapping(value = "/readCountry")
+    public List<Countries> readCountryCSV() {
+        CompletableFuture<List<Countries>> countriesFuture =
+                supplyAsync(() -> csvReadService.readCountriesRegions());
+        try {
+            return countriesFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
+    @GetMapping(value = "/readSales")
+    public List<SalesOrderDTO> readSalesCSV() {
+        CompletableFuture<List<SalesOrderDTO>> salesFuture =
+                supplyAsync(() -> csvReadService.readSalesOrderDetails());
+        try {
+            return salesFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     @ApiOperation(value = "Read All CSV Files")
     @ApiResponses(value = {
             @ApiResponse(code = 100, message = "100 Message"),
@@ -77,82 +160,6 @@ public class CSVReadRestController {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-    }
-
-    @ApiOperation(value = "Read All CSV Files")
-    @ApiResponses(value = {
-            @ApiResponse(code = 100, message = "100 Message"),
-            @ApiResponse(code = 200, message = "200 Success Message")
-    })
-    @GetMapping(value = "/readCrop")
-    public List<CropInsuranceDTO> readCropCSV() {
-        CompletableFuture<List<CropInsuranceDTO>> cropFuture =
-                supplyAsync(() -> asyncService.readCropDetails("csv/crop_insurance.csv"));
-        try {
-            return cropFuture.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    @GetMapping(value = "/readStudent")
-    public List<StudentDTO> readStudentCSV() {
-        CompletableFuture<List<StudentDTO>> studentFuture =
-                supplyAsync(() -> asyncService.readStudentInfo("csv/StudentInfo.csv"));
-        try {
-            return studentFuture.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    @GetMapping(value = "/readEmp")
-    public List<EmployeeDTO> readEmpCSV() {
-        CompletableFuture<List<EmployeeDTO>> empFuture =
-                supplyAsync(() -> asyncService.readEmployeeInfo("csv/employee.csv"));
-        try {
-            return empFuture.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    @GetMapping(value = "/readCountry")
-    public List<Countries> readCountryCSV() {
-        CompletableFuture<List<Countries>> countriesFuture =
-                supplyAsync(() -> asyncService.readCountriesRegions("csv/CountriesRegions.csv"));
-        try {
-            return countriesFuture.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-
-    @GetMapping(value = "/readSales")
-    public List<SalesOrderDTO> readSalesCSV() {
-        CompletableFuture<List<SalesOrderDTO>> salesFuture =
-                supplyAsync(() -> asyncService.readSalesOrderDetails("csv/100000_Sales_Order.csv"));
-        try {
-            return salesFuture.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     @ApiOperation(value = "readCsv")
@@ -198,17 +205,6 @@ public class CSVReadRestController {
     public List<CSVUser> readCSVToMode() {
         List<CSVUser> usersList = csvReadService.readCSVToMode();
         return usersList;
-    }
-
-    @GetMapping("/crops")
-    public ResponseEntity<List<CropInsuranceDTO>> readCropInsuranceCSV() {
-        try {
-            List<CropInsuranceDTO> cropInsurance = csvReadService.readCropInsuranceCSV();
-            return ResponseEntity.status(HttpStatus.OK).body(cropInsurance);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return null;
-        }
     }
 
 }

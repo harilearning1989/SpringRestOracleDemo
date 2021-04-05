@@ -1,7 +1,8 @@
 package com.example.demo.services;
 
+import com.example.demo.async.*;
 import com.example.demo.constants.IConstants;
-import com.example.demo.dto.CropInsuranceDTO;
+import com.example.demo.dto.*;
 import com.example.demo.dto.csv.CSVUser;
 import com.example.demo.utils.CSVHelper;
 import com.opencsv.CSVReader;
@@ -18,10 +19,14 @@ import org.springframework.stereotype.Service;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
+
+import static com.example.demo.ExecutorServiceUtil.getTheExecutorService;
+import static java.util.concurrent.CompletableFuture.supplyAsync;
 
 @Service
 public class CSVReadServiceImpl implements CSVReadService {
@@ -31,6 +36,90 @@ public class CSVReadServiceImpl implements CSVReadService {
     @Autowired
     private ResourceLoader resourceLoader;
 
+
+    @Override
+    public List<IndiaStatesDTO> getIndiaStates() {
+        CompletableFuture<List<IndiaStatesDTO>> empFuture = supplyAsync(new ReadIndiaStatesSupplier(), getTheExecutorService());
+        List<IndiaStatesDTO> empList = null;
+        try {
+            empList = empFuture.get();
+            empList = Optional.ofNullable(empList)
+                    .orElseGet(Collections::emptyList)
+                    .parallelStream()
+                    .filter(Objects::nonNull)
+                    .filter(f -> !f.getStateName().contains("&") && f.getStateName() != null && f.getStateName().equalsIgnoreCase("HARYANA"))
+                    .collect(Collectors.toList());
+            return empList;
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<EmployeeDTO> readEmployeeInfo() {
+        CompletableFuture<List<EmployeeDTO>> empFuture = supplyAsync(new ReadEmployeeSupplier());
+        List<EmployeeDTO> empList = null;
+        try {
+            TimeUnit.SECONDS.sleep(10);
+            return empFuture.get();
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<CropInsuranceDTO> readCropDetails() {
+        CompletableFuture<List<CropInsuranceDTO>> cropFuture = supplyAsync(new ReadCropInsuranceSupplier());
+        try {
+            return cropFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<StudentDTO> readStudentInfo() {
+        CompletableFuture<List<StudentDTO>> cropFuture = supplyAsync(new ReadStudentSupplier());
+        try {
+            return cropFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<Countries> readCountriesRegions() {
+        CompletableFuture<List<Countries>> cropFuture = supplyAsync(new ReadCountriesSupplier());
+        try {
+            return cropFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<SalesOrderDTO> readSalesOrderDetails() {
+        CompletableFuture<List<SalesOrderDTO>> cropFuture = supplyAsync(new ReadSalesOrderSupplier());
+        try {
+            return cropFuture.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     @Override
     public List<List<String>> readCsv() {
