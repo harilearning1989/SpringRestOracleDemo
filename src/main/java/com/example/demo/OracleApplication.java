@@ -29,6 +29,7 @@ public class OracleApplication implements CommandLineRunner {
     //http://localhost:8081/swagger-ui.html
     //localhost:8082/SpringRestOracleDemo/swagger-ui.html#/  tomcat deployment
     //http://192.168.1.200:8082/SpringRestOracleDemo/swagger-ui.html
+    //Redis   https://github.com/microsoftarchive/redis/releases
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OracleApplication.class);
     @Autowired

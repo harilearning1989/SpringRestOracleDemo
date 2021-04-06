@@ -5,13 +5,13 @@ import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.function.Supplier;
-import java.util.stream.Collectors;
+import static com.example.demo.utils.ExecutorServiceUtil.getTheExecutorService;
 
-import static com.example.demo.ExecutorServiceUtil.getTheExecutorService;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 
 public class ReadIndiaStatesSupplier implements Supplier<List<IndiaStatesDTO>> {

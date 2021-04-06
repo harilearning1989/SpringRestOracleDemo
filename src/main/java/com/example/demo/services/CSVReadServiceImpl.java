@@ -25,7 +25,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.example.demo.ExecutorServiceUtil.getTheExecutorService;
+import static com.example.demo.utils.ExecutorServiceUtil.getTheExecutorService;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 
 @Service
@@ -47,7 +47,8 @@ public class CSVReadServiceImpl implements CSVReadService {
                     .orElseGet(Collections::emptyList)
                     .parallelStream()
                     .filter(Objects::nonNull)
-                    .filter(f -> !f.getStateName().contains("&") && f.getStateName() != null && f.getStateName().equalsIgnoreCase("HARYANA"))
+                    .filter(f -> !f.getStateName().contains("&"))
+                    .filter(f -> f.getStateName() != null && f.getStateName().equalsIgnoreCase("HARYANA"))
                     .collect(Collectors.toList());
             return empList;
         } catch (InterruptedException | ExecutionException e) {
